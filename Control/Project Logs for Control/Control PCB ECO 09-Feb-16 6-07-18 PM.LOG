@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=+5V/ANA Pin=C1-2
+Removed Pin From Net: NetName=+5V/ANA Pin=C2-2
+Removed Pin From Net: NetName=+5V/ANA Pin=U1-7
+Removed Pin From Net: NetName=+5V/ANA Pin=U3-1
+Added Pin To Net: NetName=+5V/DIG Pin=C1-2
+Added Pin To Net: NetName=+5V/DIG Pin=C2-2
+Added Pin To Net: NetName=+5V/DIG Pin=U1-7
+Added Pin To Net: NetName=+5V/DIG Pin=U3-1

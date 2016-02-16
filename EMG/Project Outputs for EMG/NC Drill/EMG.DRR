@@ -1,0 +1,15 @@
+---------------------------------------------------------------------------
+NCDrill File Report For: EMG.PcbDoc   30-Jan-16  4:35:59 PM
+---------------------------------------------------------------------------
+
+Layer Pair : Component Side to Bottom Layer
+ASCII RoundHoles File : EMG.TXT
+
+Tool         Hole Size           Hole Type     Hole Count Plated       Tool Travel
+---------------------------------------------------------------------------
+T1        7.9mil (0.20066mm)       Round          13               2.59 Inch (65.85 mm)
+T2        35.4mil (0.89916mm)      Round          4                0.30 Inch (7.62 mm)
+---------------------------------------------------------------------------
+Totals                                            17               2.89 Inch (73.47 mm)
+
+Total Processing Time (hh:mm:ss) : 00:00:00

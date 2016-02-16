@@ -1,0 +1,12 @@
+Removed Member From Class: ClassName=EMG Member=E1
+Removed Member From Class: ClassName=EMG Member=E2
+Removed Member From Class: ClassName=EMG Member=E3
+Added Component: Designator=*(PADS)
+Added Pin To Net: NetName=NetE1_1 Pin=*-1
+Added Pin To Net: NetName=NetE2_1 Pin=*-2
+Added Pin To Net: NetName=NetE3_1 Pin=*-3
+Change Net Name : Old Net Name=NetE1_1 New Net Name=Net*_1
+Change Net Name : Old Net Name=NetE2_1 New Net Name=Net*_2
+Change Net Name : Old Net Name=NetE3_1 New Net Name=Net*_3
+Added Member To Class: ClassName=EMG Member=Component * EPADS
+Added Room: Name=EMG

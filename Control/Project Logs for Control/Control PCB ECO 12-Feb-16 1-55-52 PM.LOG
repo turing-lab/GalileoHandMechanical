@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=+5V/DIG Pin=P2-1
+Removed Pin From Net: NetName=GND Pin=P2-3
+Removed Pin From Net: NetName=RX_LCD Pin=U2-9
+Removed Pin From Net: NetName=TX_LCD Pin=U2-10
+Removed Pin From Net: NetName=AGND Pin=U2-26
+Removed Member From Class: ClassName=Control Member=P2
+Added Pin To Net: NetName=RX_LCD Pin=U2-2
+Added Pin To Net: NetName=TX_LCD Pin=U2-3
+Added Pin To Net: NetName=GND Pin=U2-9
+Added Pin To Net: NetName=GND Pin=U2-10

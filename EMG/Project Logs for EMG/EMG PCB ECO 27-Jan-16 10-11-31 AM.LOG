@@ -1,0 +1,28 @@
+Added Member To Class: ClassName=EMG Member=Component C1 100pF
+Added Member To Class: ClassName=EMG Member=Component C2 100nF
+Added Member To Class: ClassName=EMG Member=Component C3 100nF
+Added Member To Class: ClassName=EMG Member=Component C4 100nF
+Added Member To Class: ClassName=EMG Member=Component C5 750pF
+Added Member To Class: ClassName=EMG Member=Component C6 1uF
+Added Member To Class: ClassName=EMG Member=Component C7 100nF
+Added Member To Class: ClassName=EMG Member=Component C8 1uF
+Added Member To Class: ClassName=EMG Member=Component E1 Electrode_Pad
+Added Member To Class: ClassName=EMG Member=Component E2 Electrode_Pad
+Added Member To Class: ClassName=EMG Member=Component E3 Electrode_Pad
+Added Member To Class: ClassName=EMG Member=Component P1 Header 4
+Added Member To Class: ClassName=EMG Member=Component R1 100
+Added Member To Class: ClassName=EMG Member=Component R2 1M
+Added Member To Class: ClassName=EMG Member=Component R3 20k
+Added Member To Class: ClassName=EMG Member=Component R4 20k
+Added Member To Class: ClassName=EMG Member=Component R5 100k
+Added Member To Class: ClassName=EMG Member=Component R6 10k
+Added Member To Class: ClassName=EMG Member=Component R7 100k
+Added Member To Class: ClassName=EMG Member=Component R8 3.3M
+Added Member To Class: ClassName=EMG Member=Component R9 200k
+Added Member To Class: ClassName=EMG Member=Component R10 100k
+Added Member To Class: ClassName=EMG Member=Component R11 20k
+Added Member To Class: ClassName=EMG Member=Component R12 100k
+Added Member To Class: ClassName=EMG Member=Component U1 INA326EA/2K5
+Added Member To Class: ClassName=EMG Member=Component U2 OPA2335AIDGKR
+Added Member To Class: ClassName=EMG Member=Component U3 OPA2335AIDGKR
+Added Room: Name=EMG

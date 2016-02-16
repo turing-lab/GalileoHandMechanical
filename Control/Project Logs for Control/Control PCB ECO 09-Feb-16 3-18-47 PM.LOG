@@ -1,0 +1,27 @@
+Change Component Designator: OldDesignator= NewDesignator=P2
+Added Component: Designator=U2(DIP28)
+Added Pin To Net: NetName=GND Pin=U2-1
+Added Pin To Net: NetName=RX_VR Pin=U2-2
+Added Pin To Net: NetName=TX_VR Pin=U2-3
+Added Pin To Net: NetName=S5 Pin=U2-5
+Added Pin To Net: NetName=S4 Pin=U2-6
+Added Pin To Net: NetName=S3 Pin=U2-7
+Added Pin To Net: NetName=S2 Pin=U2-8
+Added Pin To Net: NetName=RX_LCD Pin=U2-9
+Added Pin To Net: NetName=TX_LCD Pin=U2-10
+Added Pin To Net: NetName=S1 Pin=U2-11
+Added Pin To Net: NetName=SW1 Pin=U2-13
+Added Pin To Net: NetName=SW2 Pin=U2-14
+Added Pin To Net: NetName=E1 Pin=U2-16
+Added Pin To Net: NetName=E2 Pin=U2-17
+Added Pin To Net: NetName=AGND Pin=U2-18
+Added Pin To Net: NetName=AGND Pin=U2-19
+Added Pin To Net: NetName=AGND Pin=U2-20
+Added Pin To Net: NetName=AGND Pin=U2-21
+Added Pin To Net: NetName=AGND Pin=U2-22
+Added Pin To Net: NetName=AGND Pin=U2-23
+Added Pin To Net: NetName=AGND Pin=U2-24
+Added Pin To Net: NetName=AGND Pin=U2-25
+Added Pin To Net: NetName=AGND Pin=U2-26
+Added Pin To Net: NetName=AGND Pin=U2-27
+Added Pin To Net: NetName=+5V/DIG Pin=U2-28

@@ -1,0 +1,20 @@
+Bill of Material for 
+On 28-Jan-16 at 11:43:27 AM
+
+ Comment             Pattern     Quantity  Components
+------------------------------------------------------------------------------
+ 100                 R0603            1    R1                           RES SMD 100 OHM 1% 1/10W 0603 
+ 100k                R0603            4    R5, R7, R10, R12             RES SMD 100K OHM 1% 1/8W 0603 
+ 100nF               C0603            4    C2, C3, C4, C7               CAP CER 0.1UF 25V X7R 0603 
+ 100pF               C0603            1    C1                           CAP CER 100PF 25V X7R 0603 
+ 10k                 R0603            1    R6                           RES SMD 10K OHM 1% 1/8W 0603 
+ 1M                  R0603            1    R2                           RES SMD 1M OHM 1% 1/8W 0603 
+ 1uF                 C0603            2    C6, C8                       CAP CER 1UF 25V X5R 0603 
+ 200k                R0603            1    R9                           RES SMD 200K OHM 1% 1/8W 0603 
+ 20k                 R0603            3    R3, R4, R11                  RES SMD 20K OHM 1% 1/10W 0603 
+ 3.3M                R0402            1    R8                           RES SMD 3.3M OHM 5% 1/16W 0402 
+ 750pF               C0603            1    C5                           CAP CER 750PF 50V NP0 0603 
+ EPADS               PADS             1    *                                                 
+ Header 4            HDR1X4           1    P1                           Header, 4-Pin        
+ INA326EA/2K5        VSOP8            1    U1                           IC OPAMP INSTR 1KHZ RRO 8VSSOP 
+ OPA2335AIDGKR       VSOP8            2    U2, U3                       IC OPAMP CHOPPER 2MHZ RRO 8VSSOP 
