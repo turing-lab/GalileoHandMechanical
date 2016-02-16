@@ -625,12 +625,12 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-       674        116         23         12          0     222749   main.o
+       674        116         23         12          0     222709   main.o
         76         38       1024          0       1024       1008   startup_mk20d7.o
        384         44          0          0          0        617   system_mk20d7.o
 
     ----------------------------------------------------------------------
-      1136        198       1080         12       1024     224374   Object Totals
+      1136        198       1080         12       1024     224334   Object Totals
          0          0         32          0          0          0   (incl. Generated)
          2          0          1          0          0          0   (incl. Padding)
 
@@ -679,8 +679,8 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      1416        214       1080         12       1124     224174   Grand Totals
-      1416        214       1080         12       1124     224174   ELF Image Totals
+      1416        214       1080         12       1124     224134   Grand Totals
+      1416        214       1080         12       1124     224134   ELF Image Totals
       1416        214       1080         12          0          0   ROM Totals
 
 ==============================================================================
