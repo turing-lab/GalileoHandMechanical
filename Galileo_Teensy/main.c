@@ -4,19 +4,19 @@
 #endif 
 
 #include "MK20D7.h"
+#include "arm_math.h"                   // ARM::CMSIS:DSP
 
-void Pin_Muxing(void);
-void LED_Initialize(void);
-void Switch_Initialize(void);
+void LED_Init(void);
+void Switch_Init(void);
+void ADC_Init(void);
+void FTM1_Init(void);
+void FTM0_Init(void);
+void UART0_Init(void);
+
 void LED_On(void);
 void LED_Off(void);
 void LED_Toggle(void);
-void ADC_Init(void);
 uint16_t ADC_Read(unsigned int channel);
-void FTM1_Init(void);
-void FTM2_Init(void);
-void FTM0_Init(void);
-void UART0_Init(void);
 
 uint32_t i = 0;
 uint32_t count = 0;
@@ -30,11 +30,11 @@ static const uint8_t channel2sc1a[] = {
 
 int main (void) {
   // initialize peripherals here
-	FTM1_Init();
-	Switch_Initialize();
-	LED_Initialize(); 
-	FTM2_Init();
+	SysTick_Config(7200000);
+	Switch_Init();
+	LED_Init(); 
 	FTM0_Init();
+	FTM1_Init();
 	ADC_Init();
 	//UART0_Init();
 	LED_Off();
@@ -55,9 +55,13 @@ void PORTC_IRQHandler(void){
 	}
 }
 
-void FTM2_IRQHandler(void){
-	FTM2->SC &= ~(FTM_SC_TOF_MASK); 
+void SysTick_Handler (void) {
 	LED_Toggle();
+}
+
+void UART0_RX_TX_IRQHandler(void){
+  (void) UART0->S1;                   /* Dummy read of the UART0_S1 register to clear flags */
+  (void) UART0->D;                    /* Dummy read of the UART0_D register to clear flags */
 }
 
 //Metodos
@@ -81,14 +85,14 @@ uint16_t ADC_Read(unsigned int index){
 }
 
 //Inicializaciones
-void LED_Initialize(void){
-	SIM->SCGC5 |= SIM_SCGC5_PORTC_MASK; 														  /* Enable Clock to Port C */ 
+void LED_Init(void){
+	SIM->SCGC5 |= SIM_SCGC5_PORTC_MASK; 										/* Enable Clock to Port C */ 
 	PORTC->PCR[5]  = (1UL <<  8);                           /* PTC.5 is GPIO */
 	PTC->PDOR &= ~(1UL <<  5);
 	PTC->PDDR |= (1UL <<  5);
 }
 
-void Switch_Initialize(void){
+void Switch_Init(void){
 	SIM->SCGC5 |= SIM_SCGC5_PORTC_MASK;							
 	PORTC->PCR[6] |= PORT_PCR_IRQC(0x0A) + PORT_PCR_MUX(0x01) + PORT_PCR_PE_MASK;	 
 	PORTC->PCR[6] &= ~(PORT_PCR_PS_MASK);
@@ -136,16 +140,6 @@ void FTM1_Init(void){
 	FTM1->CONTROLS[1].CnV = FTM_CnV_VAL(0x0152);																	//C1V =  338 - 0.6ms
 	FTM1->MOD = FTM_MOD_MOD(0x2BF2);																							//0x2BF2 = 11250, 11250*(1/(72MHz/2/64)) = 20 ms
 	FTM1->SC = FTM_SC_CLKS(0x01) + FTM_SC_PS(0x06);																//System Clock/64 									
-}
-
-void FTM2_Init(void){
-	SIM->SCGC3 |= SIM_SCGC3_FTM2_MASK;     
-	FTM2->MODE |= FTM_MODE_WPDIS_MASK; 																						//Write protection disable   
-	FTM2->CONTROLS[0].CnSC = FTM_CnSC_MSA_MASK;																		//Output Compare
-	FTM2->CONTROLS[0].CnV = FTM_CnV_VAL(0x00);																		//Value = 0
-	FTM2->MOD = FTM_MOD_MOD(0xDBBA);																							//0xDBBA = 11250, 56250*(1/(72MHz/2/64)) = 100 ms
-	FTM2->SC = FTM_SC_TOIE_MASK + FTM_SC_CLKS(0x01) + FTM_SC_PS(0x06);						//Overflow interrupt, System Clock/64 
-	NVIC_EnableIRQ(FTM2_IRQn);										
 }
 
 void UART0_Init(void){
