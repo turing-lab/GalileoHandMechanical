@@ -21,8 +21,8 @@ Target DLL:      UL2CM3.DLL V1.156.1.0
 Dialog DLL:      TCM.DLL V1.14.6.0
  
 <h2>Project:</h2>
-D:\Workspace_Keil\Galileo_Teensy\Galileo_Teensy.uvprojx
-Project File Date:  02/15/2016
+D:\TuringLab\GalileoHand\Galileo_Teensy\Galileo_Teensy.uvprojx
+Project File Date:  02/16/2016
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 1 (build 61)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
@@ -30,22 +30,19 @@ Rebuild target 'Target 1'
 assembling startup_MK20D7.s...
 compiling system_MK20D7.c...
 compiling main.c...
-main.c(28): warning:  #111-D: statement is unreachable
-  	return 0;
-main.c: 1 warning, 0 errors
 linking...
-Program Size: Code=1056 RO-data=1040 RW-data=0 ZI-data=1120  
+Program Size: Code=1416 RO-data=1080 RW-data=12 ZI-data=1124  
 FromELF: creating hex file...
-".\Objects\Galileo_Teensy.axf" - 0 Error(s), 1 Warning(s).
+".\Objects\Galileo_Teensy.axf" - 0 Error(s), 0 Warning(s).
 
 <h2>Software Packages used:</h2>
 
 Package Vendor: ARM
                 http://www.keil.com/pack/ARM.CMSIS.4.5.0.pack
-                ARM::CMSIS:DSP:1.4.6
+                ARM::CMSIS:CORE:4.3.0
                 CMSIS (Cortex Microcontroller Software Interface Standard)
-   * Component: DSP Version: 1.4.6
    * Component: CORE Version: 4.3.0
+   * Component: DSP Version: 1.4.6
 
 Package Vendor: Keil
                 http://www.keil.com/pack/Keil.Kinetis_K20_DFP.1.3.0.pack
@@ -54,24 +51,24 @@ Package Vendor: Keil
    * Component: Startup Version: 0.0.1
 
 <h2>Collection of Component include folders:</h2>
-  D:\Workspace_Keil\Galileo_Teensy\RTE
-  D:\Workspace_Keil\Galileo_Teensy\RTE\Device\MK20DX256xxx7
+  D:\TuringLab\GalileoHand\Galileo_Teensy\RTE
+  D:\TuringLab\GalileoHand\Galileo_Teensy\RTE\Device\MK20DX256xxx7
   C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
   C:\Keil_v5\ARM\PACK\Keil\Kinetis_K20_DFP\1.3.0\Device\Include
 
 <h2>Collection of Component Files used:</h2>
 
-   * Component: ARM::CMSIS:DSP:1.4.6
-      Library file:  CMSIS\Lib\ARM\arm_cortexM4l_math.lib
-      Include file:  CMSIS\Include\arm_math.h
-
    * Component: ARM::CMSIS:CORE:4.3.0
+
+   * Component: ARM::CMSIS:DSP:1.4.6
+      Include file:  CMSIS\Include\arm_math.h
+      Library file:  CMSIS\Lib\ARM\arm_cortexM4l_math.lib
 
    * Component: Keil::Device:Startup:0.0.1
       Source file:   Device\Source\ARM\startup_MK20D7.s
-      Include file:  RTE_Driver\Config\RTE_Device.h
       Source file:   Device\Source\system_MK20D7.c
-Build Time Elapsed:  00:00:01
+      Include file:  RTE_Driver\Config\RTE_Device.h
+Build Time Elapsed:  00:00:00
 </pre>
 </body>
 </html>
