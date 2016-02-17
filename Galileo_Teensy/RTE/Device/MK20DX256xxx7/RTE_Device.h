@@ -24,17 +24,17 @@
 
 // <h> Clock Configuration
 //   <o> System Clock <1-999999999>
-#define RTE_SYSCLK                      48000000
+#define RTE_SYSCLK                      72000000
 //   <o> Bus Clock    <1-999999999>
-#define RTE_BUSCLK                      48000000
+#define RTE_BUSCLK                      72000000
 // </h>
 
 
 // <e> UART0 (Universal asynchronous receiver transmitter)
-#define RTE_UART0                      0
+#define RTE_UART0                      1
 
 //   <o> UART0_TX Pin <0=>PTA2 <1=>PTB17 <2=>PTD7
-#define RTE_UART0_TX_ID                0
+#define RTE_UART0_TX_ID                1
 #if    (RTE_UART0_TX_ID == 0)
 #define RTE_UART0_TX_PORT              PORTA
 #define RTE_UART0_TX_BIT               2
@@ -52,7 +52,7 @@
 #endif
 
 //   <o> UART0_RX Pin <0=>PTA1 <1=>PTB16 <2=>PTD6
-#define RTE_UART0_RX_ID                0
+#define RTE_UART0_RX_ID                1
 #if    (RTE_UART0_RX_ID == 0)
 #define RTE_UART0_RX_PORT              PORTA
 #define RTE_UART0_RX_BIT               1
@@ -133,7 +133,7 @@
 
 
 // <e> UART1 (Universal asynchronous receiver transmitter)
-#define RTE_UART1                      1
+#define RTE_UART1                      0
 
 //   <o> UART1_TX Pin <0=>PTE0 <1=>PTC4 
 #define RTE_UART1_TX_ID                1

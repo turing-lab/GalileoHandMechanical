@@ -17,6 +17,8 @@ void LED_On(void);
 void LED_Off(void);
 void LED_Toggle(void);
 uint16_t ADC_Read(unsigned int channel);
+void UART_send(uint8_t dato);
+void UART_putString(uint8_t *mystring);
 
 uint32_t i = 0;
 uint32_t count = 0;
@@ -36,7 +38,7 @@ int main (void) {
 	FTM0_Init();
 	FTM1_Init();
 	ADC_Init();
-	//UART0_Init();
+	UART0_Init();
 	LED_Off();
 	
   while(1){
@@ -51,7 +53,9 @@ void PORTC_IRQHandler(void){
 	if(PORTC->PCR[6]&PORT_PCR_ISF_MASK){
 		PORTC->PCR[6] |= (PORT_PCR_ISF_MASK);
 		//LED_Toggle();
-		count++;
+		//count++;
+		//UART_send('a');
+		//UART0->D = 'a';
 	}
 }
 
@@ -82,6 +86,18 @@ uint16_t ADC_Read(unsigned int index){
 	ADC0->SC1[0] = ADC_SC1_ADCH(channel);   
 	while(!(ADC0->SC1[0] & ADC_SC1_COCO_MASK));
 	return ADC0->R[0];
+}
+
+void UART_send(uint8_t dato){
+	//while (!((UART0->S1)&(UART_S1_TDRE_MASK)));  //ejecuta lo demas hasta que el buffer este libre
+	UART0->D = dato;
+}
+
+void UART_putString(uint8_t *mystring){
+	while(*mystring){
+		UART_send(*mystring);
+		mystring++;
+	}
 }
 
 //Inicializaciones
@@ -143,20 +159,17 @@ void FTM1_Init(void){
 }
 
 void UART0_Init(void){
-	SIM->SOPT5 &= (uint32_t)~(uint32_t)(SIM_SOPT5_UART0TXSRC(0x03));
-	PORTB->PCR[16] = (uint32_t)(PORT_PCR_MUX(0x03));
-	PORTB->PCR[17] = (uint32_t)(PORT_PCR_MUX(0x03));
-	SIM->SCGC4 |= SIM_SCGC4_UART0_MASK;
+	SIM->SCGC4 |= SIM_SCGC4_UART0_MASK; 
+	//PORTB->PCR[16] = (PORT_PCR_PE_MASK | PORT_PCR_PS_MASK | PORT_PCR_PFE_MASK | PORT_PCR_MUX(3));
+	//PORTB->PCR[17] = (PORT_PCR_DSE_MASK  | PORT_PCR_SRE_MASK | PORT_PCR_MUX(3));
 	UART0->C2 &= (uint8_t)~(uint8_t)((UART_C2_TE_MASK | UART_C2_RE_MASK));
 	UART0->BDH = UART_BDH_SBR(0x00);
 	UART0->BDL = UART_BDL_SBR(0x27);
 	UART0->C4 = UART_C4_BRFA(0x02);
-	UART0->C1 = 0x00U;
-	UART0->S2 = (UART_S2_LBKDIF_MASK | UART_S2_RXEDGIF_MASK);
-	(void) UART0->S1;                   /* Dummy read of the UART0_S1 register to clear flags */
-	(void) UART0->D;                    /* Dummy read of the UART0_D register to clear flags */
-	UART0->C5 &= (uint8_t)~(uint8_t)(UART_C5_TDMAS_MASK | UART_C5_RDMAS_MASK | 0x4FU);
-	UART0->C3 = 0x00U;
+	UART0->C1 = UART_C1_ILT_MASK;
+	UART0->TWFIFO = 2; // tx watermark, causes S1_TDRE to set
+	UART0->RWFIFO = 4; // rx watermark, causes S1_RDRF to set
+	UART0->PFIFO = UART_PFIFO_TXFE_MASK | UART_PFIFO_RXFE_MASK;
 	UART0->C2 = (UART_C2_RIE_MASK | UART_C2_TE_MASK | UART_C2_RE_MASK);
 	NVIC_EnableIRQ(UART0_RX_TX_IRQn);			
 }
