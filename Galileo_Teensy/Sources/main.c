@@ -1,0 +1,169 @@
+/* ###################################################################
+**     Filename    : main.c
+**     Project     : Galileo_Teensy
+**     Processor   : MK20DX256VLL7
+**     Version     : Driver 01.01
+**     Compiler    : GNU C Compiler
+**     Date/Time   : 2016-02-17, 14:12, # CodeGen: 0
+**     Abstract    :
+**         Main module.
+**         This module contains user's application code.
+**     Settings    :
+**     Contents    :
+**         No public methods
+**
+** ###################################################################*/
+/*!
+** @file main.c
+** @version 01.01
+** @brief
+**         Main module.
+**         This module contains user's application code.
+*/         
+/*!
+**  @addtogroup main_module main module documentation
+**  @{
+*/         
+/* MODULE main */
+
+
+/* Including needed modules to compile this module/procedure */
+#include "Cpu.h"
+#include "Events.h"
+#include "PTC.h"
+#include "PIT.h"
+#include "UART0.h"
+/* Including shared modules, which are used for whole project */
+#include "PE_Types.h"
+#include "PE_Error.h"
+#include "PE_Const.h"
+#include "IO_Map.h"
+#include "arm_math.h"
+/* User includes (#include below this line is not maintained by Processor Expert) */
+
+uint32_t i = 0;
+uint32_t count = 0;
+uint32_t value = 0;
+float32_t res = 0.0f;
+
+static const uint8_t channel2sc1a[] = {
+	5, 14, 8, 9, 13, 12, 6, 7, 15, 4,
+	0, 19, 3, 19+128, 26, 18+128, 23,
+	5+192, 5+128, 4+128, 6+128, 7+128, 4+192
+};
+
+void LED_On(void){
+	GPIOC_PSOR |= (1UL<<5);
+}
+
+void LED_Off(void){
+	GPIOC_PCOR |= (1UL<<5);
+}
+
+void LED_Toggle(void){
+	GPIOC_PTOR |= (1UL<<5);
+}
+
+void ADC_Init(void){
+	SIM_SCGC6 |= SIM_SCGC6_ADC0_MASK;
+	ADC0_CFG1 = ADC_CFG1_MODE(1) + ADC_CFG1_ADLSMP_MASK + ADC_CFG1_ADICLK(0);  	//Clock/4 - short sample - 12 bits - Bus clk/2
+	ADC0_CFG2 = ADC_CFG2_MUXSEL_MASK + ADC_CFG2_ADLSTS(2); 											//High Speed, ADCB - Clk enable
+	ADC0_SC2 = 0x00;																															//Software trigger
+	ADC0_SC3 = ADC_SC3_ADCO_MASK + ADC_SC3_AVGE_MASK + ADC_SC3_AVGS(2);					//Continuos conversions - Hardware Average - 16 samples
+	ADC0_CV1 = 0x00;																															//Compare value not used
+	ADC0_CV2 = 0x00;																															//Compare value not used
+	ADC0_OFS = 0x04;																															//Offset value
+}
+
+uint16_t ADC_Read(unsigned int index){
+	uint8_t channel = channel2sc1a[index];
+	ADC0_SC1A = ADC_SC1_ADCH(channel);   
+	while(!(ADC0_SC1A & ADC_SC1_COCO_MASK));
+	return ADC0_RA;
+}
+
+void FTM0_Init(void){
+	SIM_SCGC6 |= SIM_SCGC6_FTM0_MASK;
+	PORTC_PCR1 |= PORT_PCR_MUX(0x04);
+	PORTC_PCR2 |= PORT_PCR_MUX(0x04);
+	PORTC_PCR3 = PORT_PCR_MUX(0x04);
+	FTM0_MODE |= FTM_MODE_WPDIS_MASK + FTM_MODE_INIT_MASK;				//Write protection disable   
+	FTM0_C0SC = FTM_CnSC_MSB_MASK + FTM_CnSC_ELSB_MASK;					//C2 Edge Align PWM High TRue
+	FTM0_C1SC = FTM_CnSC_MSB_MASK + FTM_CnSC_ELSB_MASK;					//C4 Edge Align PWM High TRue
+	FTM0_C2SC = FTM_CnSC_MSB_MASK + FTM_CnSC_ELSB_MASK;					//C7 Edge Align PWM High TRue
+	FTM0_C0V = FTM_CnV_VAL(0x0152);							//C0V = 338 - 0.6ms
+	FTM0_C1V = FTM_CnV_VAL(0x0152);							//C1V = 338 - 0.6ms
+	FTM0_C2V = FTM_CnV_VAL(0x0152);							//C1V = 338 - 0.6ms
+	FTM0_MOD = FTM_MOD_MOD(0x2BF2);										//0x2BF2 = 11250, 11250*(1/(72MHz/2/64)) = 20 ms
+	FTM0_SC = FTM_SC_CLKS(0x01) + FTM_SC_PS(0x06);						//System Clock/64									
+}
+
+void FTM1_Init(void){
+	SIM_SCGC6 |= SIM_SCGC6_FTM1_MASK;
+	PORTA_PCR12 = PORT_PCR_MUX(0x03);
+	PORTA_PCR13 = PORT_PCR_MUX(0x03);
+	FTM1_MODE |= FTM_MODE_WPDIS_MASK; 									//Write protection disable   
+	FTM1_C0SC = FTM_CnSC_MSB_MASK + FTM_CnSC_ELSB_MASK;					//C0 Edge Align PWM High TRue
+	FTM1_C1SC = FTM_CnSC_MSB_MASK + FTM_CnSC_ELSB_MASK;					//C1 Edge Align PWM High TRue
+	FTM1_C0V = FTM_CnV_VAL(0x0546);										//C0V = 1350 - 2.4ms
+	FTM1_C1V = FTM_CnV_VAL(0x0152);										//C1V =  338 - 0.6ms
+	FTM1_MOD = FTM_MOD_MOD(0x2BF2);										//0x2BF2 = 11250, 11250*(1/(72MHz/2/64)) = 20 ms
+	FTM1_SC = FTM_SC_CLKS(0x01) + FTM_SC_PS(0x06);						//System Clock/64 									
+}
+
+void UART_send(uint8_t dato){
+	//while (!((UART0->S1)&(UART_S1_TDRE_MASK)));  //ejecuta lo demas hasta que el buffer este libre
+	UART0_D = dato;
+}
+
+void UART_putString(uint8_t *mystring){
+	while(*mystring){
+		UART_send(*mystring);
+		mystring++;
+	}
+}
+
+
+
+/*lint -save  -e970 Disable MISRA rule (6.3) checking. */
+int main(void)
+/*lint -restore Enable MISRA rule (6.3) checking. */
+{
+  /* Write your local variable definition here */
+  /*** Processor Expert internal initialization. DON'T REMOVE THIS CODE!!! ***/
+  PE_low_level_init();
+  ADC_Init();
+  /*** End of Processor Expert internal initialization.                    ***/
+  LED_On();
+  /* Write your code here */
+  /* For example: for(;;) { } */
+  for(;;){
+	  value = ADC_Read(0);
+	  arm_sqrt_f32((float32_t)value,&res);
+	  //if(value>2048) LED_Off();
+	  //else LED_On();
+  }
+
+  /*** Don't write any code pass this line, or it will be deleted during code generation. ***/
+  /*** RTOS startup code. Macro PEX_RTOS_START is defined by the RTOS component. DON'T MODIFY THIS CODE!!! ***/
+  #ifdef PEX_RTOS_START
+    PEX_RTOS_START();                  /* Startup of the selected RTOS. Macro is defined by the RTOS component. */
+  #endif
+  /*** End of RTOS startup code.  ***/
+  /*** Processor Expert end of main routine. DON'T MODIFY THIS CODE!!! ***/
+  for(;;){}
+  /*** Processor Expert end of main routine. DON'T WRITE CODE BELOW!!! ***/
+} /*** End of main routine. DO NOT MODIFY THIS TEXT!!! ***/
+
+/* END main */
+/*!
+** @}
+*/
+/*
+** ###################################################################
+**
+**     This file was created by Processor Expert 10.3 [05.09]
+**     for the Freescale Kinetis series of microcontrollers.
+**
+** ###################################################################
+*/

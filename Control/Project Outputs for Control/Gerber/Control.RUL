@@ -1,4 +1,4 @@
-DRC Rules Export File for PCB: D:\Workspace_Altium\Control\Control.PcbDoc
+DRC Rules Export File for PCB: D:\TuringLab\GalileoHand\Control\Control.PcbDoc
 RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion|Scope=Board|Minimum=4.00
 RuleKind=Width|RuleName=Width|Scope=Board|Minimum=5.91
 RuleKind=Clearance|RuleName=Clearance|Scope=Board|Minimum=10.00
