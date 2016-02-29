@@ -12,10 +12,8 @@ Generated_Code/PE_LDD.o: ../Generated_Code/PE_LDD.c \
  C:/Freescale/CW\ MCU\ v10.6.4/MCU/ARM_GCC_Support/ewl/EWL_C/include/limits_api.h \
  C:/Freescale/CW\ MCU\ v10.6.4/MCU/ARM_GCC_Support/ewl/EWL_C/include/ewl_lib_ext1.h \
  ../Generated_Code/PE_Error.h ../Generated_Code/PE_Const.h \
- ../Generated_Code/PTC.h ../Generated_Code/IO_Map.h \
- C:/Freescale/CW\ MCU\ v10.6.4/MCU/ProcessorExpert/lib/Kinetis/iofiles/MK20D7.h \
- ../Generated_Code/Cpu.h ../Generated_Code/PIT.h \
- ../Generated_Code/UART0.h
+ ../Generated_Code/Cpu.h ../Generated_Code/IO_Map.h \
+ C:/Freescale/CW\ MCU\ v10.6.4/MCU/ProcessorExpert/lib/Kinetis/iofiles/MK20D7.h
 
 C:/Freescale/CW\ MCU\ v10.6.4/MCU/ARM_GCC_Support/ewl/EWL_C/include/lib_ewl.prefix:
 
@@ -47,14 +45,8 @@ C:/Freescale/CW\ MCU\ v10.6.4/MCU/ARM_GCC_Support/ewl/EWL_C/include/ewl_lib_ext1
 
 ../Generated_Code/PE_Const.h:
 
-../Generated_Code/PTC.h:
+../Generated_Code/Cpu.h:
 
 ../Generated_Code/IO_Map.h:
 
 C:/Freescale/CW\ MCU\ v10.6.4/MCU/ProcessorExpert/lib/Kinetis/iofiles/MK20D7.h:
-
-../Generated_Code/Cpu.h:
-
-../Generated_Code/PIT.h:
-
-../Generated_Code/UART0.h:

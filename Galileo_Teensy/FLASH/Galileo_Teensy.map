@@ -24,11 +24,11 @@ C:/Freescale/CW MCU v10.6.4/MCU/ARM_GCC_Support/ewl/lib/armv7e-m\libm.a(w_sqrtf.
                               ./Sources/main.o (sqrtf)
 C:/Freescale/CW MCU v10.6.4/MCU/ARM_GCC_Support/ewl/lib/armv7e-m\libm.a(e_sqrtf.o)
                               C:/Freescale/CW MCU v10.6.4/MCU/ARM_GCC_Support/ewl/lib/armv7e-m\libm.a(w_sqrtf.o) (__ieee754_sqrtf)
-c:/freescale/cw mcu v10.6.4/cross_tools/arm-none-eabi-gcc-4_7_3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m/fpu\libgcc.a(_arm_addsubsf3.o)
+c:/freescale/cw mcu v10.6.4/cross_tools/arm-none-eabi-gcc-4_7_3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_arm_addsubsf3.o)
                               C:/Freescale/CW MCU v10.6.4/MCU/ARM_GCC_Support/ewl/lib/armv7e-m\libm.a(e_sqrtf.o) (__aeabi_fsub)
-c:/freescale/cw mcu v10.6.4/cross_tools/arm-none-eabi-gcc-4_7_3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m/fpu\libgcc.a(_arm_muldivsf3.o)
+c:/freescale/cw mcu v10.6.4/cross_tools/arm-none-eabi-gcc-4_7_3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_arm_muldivsf3.o)
                               C:/Freescale/CW MCU v10.6.4/MCU/ARM_GCC_Support/ewl/lib/armv7e-m\libm.a(e_sqrtf.o) (__aeabi_fmul)
-c:/freescale/cw mcu v10.6.4/cross_tools/arm-none-eabi-gcc-4_7_3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m/fpu\libgcc.a(_arm_cmpsf2.o)
+c:/freescale/cw mcu v10.6.4/cross_tools/arm-none-eabi-gcc-4_7_3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_arm_cmpsf2.o)
                               ./Sources/main.o (__aeabi_fcmpge)
 C:/Freescale/CW MCU v10.6.4/MCU/ARM_GCC_Support/ewl/lib/armv7e-m\librt.a(gcc_ctor_dtor.o)
                               ./Project_Settings/Startup_Code/__arm_start.o (__init_cpp)
@@ -161,12 +161,12 @@ Discarded input sections
  .text          0x00000000        0x0 C:/Freescale/CW MCU v10.6.4/MCU/ARM_GCC_Support/ewl/lib/armv7e-m\libm.a(e_sqrtf.o)
  .data          0x00000000        0x0 C:/Freescale/CW MCU v10.6.4/MCU/ARM_GCC_Support/ewl/lib/armv7e-m\libm.a(e_sqrtf.o)
  .bss           0x00000000        0x0 C:/Freescale/CW MCU v10.6.4/MCU/ARM_GCC_Support/ewl/lib/armv7e-m\libm.a(e_sqrtf.o)
- .data          0x00000000        0x0 c:/freescale/cw mcu v10.6.4/cross_tools/arm-none-eabi-gcc-4_7_3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m/fpu\libgcc.a(_arm_addsubsf3.o)
- .bss           0x00000000        0x0 c:/freescale/cw mcu v10.6.4/cross_tools/arm-none-eabi-gcc-4_7_3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m/fpu\libgcc.a(_arm_addsubsf3.o)
- .data          0x00000000        0x0 c:/freescale/cw mcu v10.6.4/cross_tools/arm-none-eabi-gcc-4_7_3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m/fpu\libgcc.a(_arm_muldivsf3.o)
- .bss           0x00000000        0x0 c:/freescale/cw mcu v10.6.4/cross_tools/arm-none-eabi-gcc-4_7_3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m/fpu\libgcc.a(_arm_muldivsf3.o)
- .data          0x00000000        0x0 c:/freescale/cw mcu v10.6.4/cross_tools/arm-none-eabi-gcc-4_7_3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m/fpu\libgcc.a(_arm_cmpsf2.o)
- .bss           0x00000000        0x0 c:/freescale/cw mcu v10.6.4/cross_tools/arm-none-eabi-gcc-4_7_3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m/fpu\libgcc.a(_arm_cmpsf2.o)
+ .data          0x00000000        0x0 c:/freescale/cw mcu v10.6.4/cross_tools/arm-none-eabi-gcc-4_7_3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_arm_addsubsf3.o)
+ .bss           0x00000000        0x0 c:/freescale/cw mcu v10.6.4/cross_tools/arm-none-eabi-gcc-4_7_3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_arm_addsubsf3.o)
+ .data          0x00000000        0x0 c:/freescale/cw mcu v10.6.4/cross_tools/arm-none-eabi-gcc-4_7_3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_arm_muldivsf3.o)
+ .bss           0x00000000        0x0 c:/freescale/cw mcu v10.6.4/cross_tools/arm-none-eabi-gcc-4_7_3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_arm_muldivsf3.o)
+ .data          0x00000000        0x0 c:/freescale/cw mcu v10.6.4/cross_tools/arm-none-eabi-gcc-4_7_3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_arm_cmpsf2.o)
+ .bss           0x00000000        0x0 c:/freescale/cw mcu v10.6.4/cross_tools/arm-none-eabi-gcc-4_7_3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_arm_cmpsf2.o)
  .text          0x00000000        0x0 C:/Freescale/CW MCU v10.6.4/MCU/ARM_GCC_Support/ewl/lib/armv7e-m\librt.a(gcc_ctor_dtor.o)
  .data          0x00000000        0x0 C:/Freescale/CW MCU v10.6.4/MCU/ARM_GCC_Support/ewl/lib/armv7e-m\librt.a(gcc_ctor_dtor.o)
  .bss           0x00000000        0x0 C:/Freescale/CW MCU v10.6.4/MCU/ARM_GCC_Support/ewl/lib/armv7e-m\librt.a(gcc_ctor_dtor.o)
@@ -226,7 +226,7 @@ LOAD C:/Keil_v5/ARM/Pack/ARM/CMSIS/4.5.0/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a
 START GROUP
 LOAD C:/Freescale/CW MCU v10.6.4/MCU/ARM_GCC_Support/ewl/lib/armv7e-m\libc.a
 LOAD C:/Freescale/CW MCU v10.6.4/MCU/ARM_GCC_Support/ewl/lib/armv7e-m\libm.a
-LOAD c:/freescale/cw mcu v10.6.4/cross_tools/arm-none-eabi-gcc-4_7_3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m/fpu\libgcc.a
+LOAD c:/freescale/cw mcu v10.6.4/cross_tools/arm-none-eabi-gcc-4_7_3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a
 LOAD C:/Freescale/CW MCU v10.6.4/MCU/ARM_GCC_Support/ewl/lib/armv7e-m\librt.a
 LOAD C:/Freescale/CW MCU v10.6.4/MCU/ARM_GCC_Support/ewl/lib/armv7e-m\libuart.a
 END GROUP
@@ -253,7 +253,7 @@ END GROUP
 .text           0x00000410     0x240c
                 0x00000410                . = ALIGN (0x4)
  *(.text)
- .text          0x00000410      0x21c c:/freescale/cw mcu v10.6.4/cross_tools/arm-none-eabi-gcc-4_7_3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m/fpu\libgcc.a(_arm_addsubsf3.o)
+ .text          0x00000410      0x21c c:/freescale/cw mcu v10.6.4/cross_tools/arm-none-eabi-gcc-4_7_3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_arm_addsubsf3.o)
                 0x00000410                __aeabi_frsub
                 0x00000418                __subsf3
                 0x00000418                __aeabi_fsub
@@ -267,12 +267,12 @@ END GROUP
                 0x000005a0                __floatundisf
                 0x000005b0                __aeabi_l2f
                 0x000005b0                __floatdisf
- .text          0x0000062c      0x2a0 c:/freescale/cw mcu v10.6.4/cross_tools/arm-none-eabi-gcc-4_7_3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m/fpu\libgcc.a(_arm_muldivsf3.o)
+ .text          0x0000062c      0x2a0 c:/freescale/cw mcu v10.6.4/cross_tools/arm-none-eabi-gcc-4_7_3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_arm_muldivsf3.o)
                 0x0000062c                __mulsf3
                 0x0000062c                __aeabi_fmul
                 0x00000794                __aeabi_fdiv
                 0x00000794                __divsf3
- .text          0x000008cc       0xec c:/freescale/cw mcu v10.6.4/cross_tools/arm-none-eabi-gcc-4_7_3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m/fpu\libgcc.a(_arm_cmpsf2.o)
+ .text          0x000008cc       0xec c:/freescale/cw mcu v10.6.4/cross_tools/arm-none-eabi-gcc-4_7_3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_arm_cmpsf2.o)
                 0x000008cc                __gesf2
                 0x000008cc                __gtsf2
                 0x000008d4                __lesf2
@@ -557,7 +557,7 @@ END GROUP
                 0x1fff844c                . = ALIGN (0x4)
 
 .ARM.attributes
-                0x00000000       0x39
+                0x00000000       0x33
  *(.ARM.attributes)
  .ARM.attributes
                 0x00000000       0x33 ./Generated_Code/Vectors.o
@@ -602,19 +602,19 @@ END GROUP
  .ARM.attributes
                 0x000003fc       0x33 C:/Freescale/CW MCU v10.6.4/MCU/ARM_GCC_Support/ewl/lib/armv7e-m\libm.a(e_sqrtf.o)
  .ARM.attributes
-                0x0000042f       0x24 c:/freescale/cw mcu v10.6.4/cross_tools/arm-none-eabi-gcc-4_7_3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m/fpu\libgcc.a(_arm_addsubsf3.o)
+                0x0000042f       0x1e c:/freescale/cw mcu v10.6.4/cross_tools/arm-none-eabi-gcc-4_7_3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_arm_addsubsf3.o)
  .ARM.attributes
-                0x00000453       0x24 c:/freescale/cw mcu v10.6.4/cross_tools/arm-none-eabi-gcc-4_7_3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m/fpu\libgcc.a(_arm_muldivsf3.o)
+                0x0000044d       0x1e c:/freescale/cw mcu v10.6.4/cross_tools/arm-none-eabi-gcc-4_7_3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_arm_muldivsf3.o)
  .ARM.attributes
-                0x00000477       0x24 c:/freescale/cw mcu v10.6.4/cross_tools/arm-none-eabi-gcc-4_7_3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m/fpu\libgcc.a(_arm_cmpsf2.o)
+                0x0000046b       0x1e c:/freescale/cw mcu v10.6.4/cross_tools/arm-none-eabi-gcc-4_7_3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_arm_cmpsf2.o)
  .ARM.attributes
-                0x0000049b       0x33 C:/Freescale/CW MCU v10.6.4/MCU/ARM_GCC_Support/ewl/lib/armv7e-m\librt.a(gcc_ctor_dtor.o)
+                0x00000489       0x33 C:/Freescale/CW MCU v10.6.4/MCU/ARM_GCC_Support/ewl/lib/armv7e-m\librt.a(gcc_ctor_dtor.o)
  .ARM.attributes
-                0x000004ce       0x33 C:/Freescale/CW MCU v10.6.4/MCU/ARM_GCC_Support/ewl/lib/armv7e-m\librt.a(__arm_eabi_init.o)
+                0x000004bc       0x33 C:/Freescale/CW MCU v10.6.4/MCU/ARM_GCC_Support/ewl/lib/armv7e-m\librt.a(__arm_eabi_init.o)
  .ARM.attributes
-                0x00000501       0x33 C:/Freescale/CW MCU v10.6.4/MCU/ARM_GCC_Support/ewl/lib/armv7e-m\librt.a(ROMCopy.o)
+                0x000004ef       0x33 C:/Freescale/CW MCU v10.6.4/MCU/ARM_GCC_Support/ewl/lib/armv7e-m\librt.a(ROMCopy.o)
  .ARM.attributes
-                0x00000534       0x33 C:/Freescale/CW MCU v10.6.4/MCU/ARM_GCC_Support/ewl/lib/armv7e-m\libc.a(errno.o)
+                0x00000522       0x33 C:/Freescale/CW MCU v10.6.4/MCU/ARM_GCC_Support/ewl/lib/armv7e-m\libc.a(errno.o)
 OUTPUT(Galileo_Teensy.elf elf32-littlearm)
 
 .debug_info     0x00000000     0x44da

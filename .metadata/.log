@@ -249,3 +249,11 @@ org.eclipse.core.runtime.CoreException: ARM GDI Protocol Adapter : Can't connect
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
 !SUBENTRY 1 com.freescale.core.debugger.cdt 4 16777218 2016-02-17 19:10:31.406
 !MESSAGE ARM GDI Protocol Adapter : Can't connect. The Debugger can not connect to the P&E device
+
+!ENTRY org.eclipse.ui.ide 2 4 2016-02-17 19:25:48.350
+!MESSAGE Problems occurred closing the selected resources.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2016-02-17 19:25:48.350
+!MESSAGE The project description file (.project) for 'Galileo_Teensy' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-02-17 19:27:12.052
+!MESSAGE Indexed 'Galileo_Teensy' (10 sources, 67 headers) in 3.32 sec: 2,321 declarations; 7,370 references; 1 unresolved inclusions; 29 syntax errors; 2 unresolved names (0.02%)

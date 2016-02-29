@@ -1,7 +1,4 @@
 "./Generated_Code/Vectors.o"
-"./Generated_Code/UART0.o"
-"./Generated_Code/PTC.o"
-"./Generated_Code/PIT.o"
 "./Generated_Code/PE_LDD.o"
 "./Generated_Code/Cpu.o"
 "./Project_Settings/Startup_Code/__arm_start.o"
@@ -14,7 +11,7 @@
 -g3
 -gdwarf-2
 -gstrict-dwarf
--T"D:/TuringLab/GalileoHand/Galileo_Teensy/Project_Settings/Linker_Files/ProcessorExpert.ld"
+-T"D:/Workspace_CodeWarrior/Galileo_Teensy/Project_Settings/Linker_Files/ProcessorExpert.ld"
 -Xlinker
 --gc-sections
 -L"C:/Freescale/CW MCU v10.6.4/MCU/ARM_GCC_Support/ewl/lib/armv7e-m"

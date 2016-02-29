@@ -2,7 +2,7 @@
 # Automatically-generated file. Do not edit!
 ################################################################################
 
-#Progress monitor hint: 10
+#Progress monitor hint: 7
 first : all
 -include ../makefile.init
 
@@ -59,7 +59,7 @@ all: warning-messages explicit-dependencies Galileo_Teensy.elf secondary-outputs
 # Tool invocations
 Galileo_Teensy.elf: $(OBJS) $(USER_OBJS) ../Project_Settings/Linker_Files/ProcessorExpert.ld
 	@echo 'Building target: $@'
-	@echo 'Executing target #11 $@'
+	@echo 'Executing target #8 $@'
 	@echo 'Invoking: ARM Ltd Windows GCC C Linker'
 	"$(ARMSourceryDirEnv)/arm-none-eabi-gcc"  $(USER_OBJS_QUOTED) $(LIBS_QUOTED) @"Galileo_Teensy.args" -o"Galileo_Teensy.elf"
 	@echo 'Finished building target: $@'
