@@ -1,9 +1,0 @@
---cpu Cortex-M4
-".\objects\main.o"
-".\objects\clockmanager.o"
-".\objects\startup_mk20d7.o"
-"C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Lib\ARM\arm_cortexM4l_math.lib"
---strict --scatter ".\Objects\Prueba.sct"
---summary_stderr --info summarysizes --map --xref --callgraph --symbols
---info sizes --info totals --info unused --info veneers
---list ".\Listings\Prueba.map" -o .\Objects\Prueba.axf
