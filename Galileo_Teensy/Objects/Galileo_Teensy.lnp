@@ -1,0 +1,11 @@
+--cpu Cortex-M4
+".\objects\main.o"
+".\objects\drivers.o"
+".\objects\easyvr.o"
+"C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Lib\ARM\arm_cortexM4l_math.lib"
+".\objects\startup_mk20d7.o"
+".\objects\system_mk20d7.o"
+--strict --scatter ".\Objects\Galileo_Teensy.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\Galileo_Teensy.map" -o .\Objects\Galileo_Teensy.axf

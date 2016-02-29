@@ -1,0 +1,11 @@
+Removed Pin From Net: NetName=GND Pin=U2-7
+Removed Pin From Net: NetName=GND Pin=U2-8
+Added Component: Designator=P?(MHDR1X4)
+Added Pin To Net: NetName=+5V/DIG Pin=P?-1
+Added Pin To Net: NetName=GND Pin=P?-2
+Added Pin To Net: NetName=RX_VR Pin=P?-3
+Added Pin To Net: NetName=RX_VR Pin=U2-7
+Added Net: Name=RX_VR
+Added Pin To Net: NetName=TX_VR Pin=P?-4
+Added Pin To Net: NetName=TX_VR Pin=U2-8
+Added Net: Name=TX_VR

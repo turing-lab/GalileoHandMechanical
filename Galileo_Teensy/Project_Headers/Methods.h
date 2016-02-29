@@ -1,0 +1,18 @@
+/*
+ * Methods.h
+ *
+ *  Created on: Feb 17, 2016
+ *      Author: Julio Fajardo
+ */
+
+#ifndef METHODS_H_
+#define METHODS_H_
+
+void LED_On(void);
+void LED_Off(void);
+void LED_Toggle(void);
+uint16_t ADC0_Read(unsigned int index);
+void UART0_send(uint8_t dato);
+void UART0_putString(uint8_t *mystring);
+
+#endif /* METHODS_H_ */
