@@ -1,0 +1,89 @@
+Removed Pin From Net: NetName=IM2 Pin=R6-2
+Removed Pin From Net: NetName=IM3 Pin=R7-2
+Removed Pin From Net: NetName=IM3 Pin=R9-2
+Removed Pin From Net: NetName=IM4 Pin=R10-2
+Removed Pin From Net: NetName=AGND Pin=U3-18
+Removed Pin From Net: NetName=M1+ Pin=U5-2
+Removed Pin From Net: NetName=IM2 Pin=U5-3
+Removed Pin From Net: NetName=M1- Pin=U5-4
+Removed Pin From Net: NetName=M2- Pin=U5-5
+Removed Pin From Net: NetName=IM3 Pin=U5-6
+Removed Pin From Net: NetName=M2+ Pin=U5-7
+Removed Pin From Net: NetName=PWM2+ Pin=U5-9
+Removed Pin From Net: NetName=PWM2- Pin=U5-10
+Removed Pin From Net: NetName=PWM1- Pin=U5-15
+Removed Pin From Net: NetName=PWM1+ Pin=U5-16
+Removed Pin From Net: NetName=M1+ Pin=U6-2
+Removed Pin From Net: NetName=IM3 Pin=U6-3
+Removed Pin From Net: NetName=M1- Pin=U6-4
+Removed Pin From Net: NetName=M2- Pin=U6-5
+Removed Pin From Net: NetName=IM4 Pin=U6-6
+Removed Pin From Net: NetName=M2+ Pin=U6-7
+Removed Pin From Net: NetName=PWM2+ Pin=U6-9
+Removed Pin From Net: NetName=PWM2- Pin=U6-10
+Removed Pin From Net: NetName=PWM1- Pin=U6-15
+Removed Pin From Net: NetName=PWM1+ Pin=U6-16
+Added Component: Designator=P3(HDR1X3)
+Added Pin To Net: NetName=IM3 Pin=R6-2
+Added Pin To Net: NetName=IM4 Pin=R9-2
+Added Pin To Net: NetName=PWM1+ Pin=U3-4
+Added Pin To Net: NetName=PWM1- Pin=U3-5
+Added Pin To Net: NetName=PWM2+ Pin=U3-6
+Added Pin To Net: NetName=PWM2- Pin=U3-7
+Added Pin To Net: NetName=REF Pin=U3-18
+Added Pin To Net: NetName=IM1 Pin=U3-19
+Added Pin To Net: NetName=IM2 Pin=U3-20
+Added Pin To Net: NetName=IM3 Pin=U3-21
+Added Pin To Net: NetName=IM4 Pin=U3-22
+Added Pin To Net: NetName=IM3 Pin=U5-3
+Added Pin To Net: NetName=IM4 Pin=U5-6
+Added Pin To Net: NetName=IM5 Pin=P3-2
+Added Pin To Net: NetName=IM5 Pin=R7-2
+Added Pin To Net: NetName=IM5 Pin=U6-3
+Added Net: Name=IM5
+Added Pin To Net: NetName=IM6 Pin=P3-3
+Added Pin To Net: NetName=IM6 Pin=R10-2
+Added Pin To Net: NetName=IM6 Pin=U6-6
+Added Net: Name=IM6
+Added Pin To Net: NetName=M3+ Pin=U5-2
+Added Net: Name=M3+
+Added Pin To Net: NetName=M3- Pin=U5-4
+Added Net: Name=M3-
+Added Pin To Net: NetName=M4+ Pin=U5-7
+Added Net: Name=M4+
+Added Pin To Net: NetName=M4- Pin=U5-5
+Added Net: Name=M4-
+Added Pin To Net: NetName=M5+ Pin=U6-2
+Added Net: Name=M5+
+Added Pin To Net: NetName=M5- Pin=U6-4
+Added Net: Name=M5-
+Added Pin To Net: NetName=M6+ Pin=U6-7
+Added Net: Name=M6+
+Added Pin To Net: NetName=M6- Pin=U6-5
+Added Net: Name=M6-
+Added Pin To Net: NetName=PWM3+ Pin=U3-8
+Added Pin To Net: NetName=PWM3+ Pin=U5-16
+Added Net: Name=PWM3+
+Added Pin To Net: NetName=PWM3- Pin=U3-9
+Added Pin To Net: NetName=PWM3- Pin=U5-15
+Added Net: Name=PWM3-
+Added Pin To Net: NetName=PWM4+ Pin=U3-10
+Added Pin To Net: NetName=PWM4+ Pin=U5-9
+Added Net: Name=PWM4+
+Added Pin To Net: NetName=PWM4- Pin=U3-11
+Added Pin To Net: NetName=PWM4- Pin=U5-10
+Added Net: Name=PWM4-
+Added Pin To Net: NetName=PWM5+ Pin=U3-12
+Added Pin To Net: NetName=PWM5+ Pin=U6-16
+Added Net: Name=PWM5+
+Added Pin To Net: NetName=PWM5- Pin=U3-25
+Added Pin To Net: NetName=PWM5- Pin=U6-15
+Added Net: Name=PWM5-
+Added Pin To Net: NetName=PWM6+ Pin=U3-24
+Added Pin To Net: NetName=PWM6+ Pin=U6-9
+Added Net: Name=PWM6+
+Added Pin To Net: NetName=PWM6- Pin=U3-23
+Added Pin To Net: NetName=PWM6- Pin=U6-10
+Added Net: Name=PWM6-
+Added Class: Name=Galileo_Control_Board
+Added Room: Name=Galileo_Control_Board

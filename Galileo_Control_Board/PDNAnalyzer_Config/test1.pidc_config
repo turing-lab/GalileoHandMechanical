@@ -1,0 +1,125 @@
+{
+  "BoardFile": "D:\\Workspace_Altium\\Galileo_Control_Board\\Galileo_Control_Board.PcbDoc",
+  "SourcePowerNet": "+VBAT",
+  "LoadPowerNet": "+VBAT",
+  "GroundNet": "GND",
+  "SourceModel": {
+    "Name": null,
+    "PowerNet": "+VBAT",
+    "PowerComponent": "RVLAVKYR|24675197|35452756|J2",
+    "PowerPins": [
+      "PVRKNWVQ|24175200|35452760|J2-1"
+    ],
+    "GroundNet": "GND",
+    "GroundComponent": "RVLAVKYR|24675197|35452756|J2",
+    "GroundPins": [
+      "LHCHCVKD|25175200|35452760|J2-2"
+    ],
+    "SourceProperties": {
+      "MinDCVoltage": 11.0,
+      "MaxResistance": 0.0,
+      "MaxDCCurrent": 2.0,
+      "MaxPinCurrent": 0.0,
+      "MaxGndPinCurrent": 0.0
+    },
+    "LoadProperties": {
+      "UseCurrent": true,
+      "MaxDCCurrent": 0.0,
+      "MinResistance": 0.0,
+      "MinDCVoltage": 0.0
+    }
+  },
+  "LoadModels": [
+    {
+      "Name": null,
+      "PowerNet": "+VBAT",
+      "PowerComponent": "VWIFMPKN|13986220|47736222|U4",
+      "PowerPins": [
+        "GBEQGRSJ|15088582|47608269|U4-12"
+      ],
+      "GroundNet": "GND",
+      "GroundComponent": "VWIFMPKN|13986220|47736222|U4",
+      "GroundPins": [
+        "VKKTRNWK|15088582|47864175|U4-13",
+        "VUEOSTYU|13986220|47736222|U4-17"
+      ],
+      "SourceProperties": {
+        "MinDCVoltage": 0.0,
+        "MaxResistance": 0.0,
+        "MaxDCCurrent": 0.0,
+        "MaxPinCurrent": 0.0,
+        "MaxGndPinCurrent": 0.0
+      },
+      "LoadProperties": {
+        "UseCurrent": true,
+        "MaxDCCurrent": 1.0,
+        "MinResistance": 0.0,
+        "MinDCVoltage": 10.0
+      }
+    },
+    {
+      "Name": null,
+      "PowerNet": "+VBAT",
+      "PowerComponent": "VIIDOPGD|19891731|47706693|U5",
+      "PowerPins": [
+        "JURNQJHF|20994093|47578740|U5-12"
+      ],
+      "GroundNet": "GND",
+      "GroundComponent": "VIIDOPGD|19891731|47706693|U5",
+      "GroundPins": [
+        "QFCWRAUY|20994093|47834646|U5-13",
+        "UJMOUPGR|19891731|47706693|U5-17"
+      ],
+      "SourceProperties": {
+        "MinDCVoltage": 0.0,
+        "MaxResistance": 0.0,
+        "MaxDCCurrent": 0.0,
+        "MaxPinCurrent": 0.0,
+        "MaxGndPinCurrent": 0.0
+      },
+      "LoadProperties": {
+        "UseCurrent": true,
+        "MaxDCCurrent": 1.0,
+        "MinResistance": 0.0,
+        "MinDCVoltage": 10.0
+      }
+    },
+    {
+      "Name": null,
+      "PowerNet": "+VBAT",
+      "PowerComponent": "BWGBFFQY|25669291|47657481|U6",
+      "PowerPins": [
+        "BYVWQJIF|26771653|47529528|U6-12"
+      ],
+      "GroundNet": "GND",
+      "GroundComponent": "BWGBFFQY|25669291|47657481|U6",
+      "GroundPins": [
+        "SCUGKGEH|26771653|47785434|U6-13",
+        "JJBSJCEO|25669291|47657481|U6-17"
+      ],
+      "SourceProperties": {
+        "MinDCVoltage": 0.0,
+        "MaxResistance": 0.0,
+        "MaxDCCurrent": 0.0,
+        "MaxPinCurrent": 0.0,
+        "MaxGndPinCurrent": 0.0
+      },
+      "LoadProperties": {
+        "UseCurrent": true,
+        "MaxDCCurrent": 1.0,
+        "MinResistance": 0.0,
+        "MinDCVoltage": 10.0
+      }
+    }
+  ],
+  "Conductiviy": 47000000.0,
+  "ViaWallThickness": 0.7,
+  "ConductivityOptions": {
+    "BaseTemperature": 25.0,
+    "WorkTemperature": 25.0,
+    "BaseConductiviy": 47000000.0,
+    "Coefficient": 0.4
+  },
+  "IgnoreNets": [],
+  "PassiveGroups": []
+}

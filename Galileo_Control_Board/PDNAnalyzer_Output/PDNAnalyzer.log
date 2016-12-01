@@ -1,0 +1,115 @@
+<<info>>
+CST PI-DC Module [built: Jun 29 2016 / 01:19:40, version=Version 2016.4 Build: 20160628]
+<<end>>
+<<progress>>
+100
+<<end>>
+<<progress>>
+0
+Reading layers
+<<end>>
+<<progress>>
+14
+Reading layers
+<<end>>
+<<progress>>
+28
+Reading layers
+<<end>>
+<<progress>>
+42
+Reading layers
+<<end>>
+<<progress>>
+100
+Reading layers
+<<end>>
+<<progress>>
+0
+Creating simulation-control file
+<<end>>
+<<progress>>
+10
+Pre-processing components
+<<end>>
+<<progress>>
+20
+Pre-processing geometries
+<<end>>
+<<progress>>
+70
+Saving PCB layout in CST format
+<<end>>
+<<progress>>
+100
+Done PCB conversion to CST format
+<<end>>
+<<info>>
+Running IR-Drop Solver
+<<end>>
+<<progress>>
+0
+CST PI-DC solution
+<<end>>
+<<progress>>
+0
+CST PI-DC solution
+<<end>>
+<<progress>>
+10
+CST PI-DC solution
+<<end>>
+<<progress>>
+0
+CST PI-DC solution
+<<end>>
+<<progress>>
+10
+CST PI-DC solution
+<<end>>
+<<progress>>
+20
+CST PI-DC solution
+<<end>>
+<<progress>>
+30
+CST PI-DC solution
+<<end>>
+<<progress>>
+50
+CST PI-DC solution
+<<end>>
+<<progress>>
+100
+CST PI-DC solution
+<<end>>
+<<info>>
+PI-DC analysis finished successfully.
+<<end>>
+<<progress>>
+0
+CST PI-DC solution
+<<end>>
+<<progress>>
+10
+CST PI-DC solution
+<<end>>
+<<progress>>
+20
+CST PI-DC solution
+<<end>>
+<<progress>>
+30
+CST PI-DC solution
+<<end>>
+<<progress>>
+50
+CST PI-DC solution
+<<end>>
+<<progress>>
+100
+CST PI-DC solution
+<<end>>
+<<info>>
+PI-DC analysis finished successfully.
+<<end>>

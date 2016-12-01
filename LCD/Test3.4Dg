@@ -1,0 +1,32 @@
+#platform "GOLDELOX"
+
+// Program Skeleton 1.0 generated 09-Mar-16 3:12:36 PM
+
+#inherit "4DGL_16bitColours.fnc"
+
+#inherit "VisualConst.inc"
+
+#inherit "Test3Const.inc"
+
+func main()
+//  Uncomment the following if uSD images, fonts or strings used.
+/*
+    print("Starting\n") ;
+    while(!media_Init())
+        putstr("Drive not mounted...");
+        pause(200);
+        gfx_Cls();
+        pause(200);
+    wend
+*/
+
+
+    // Angularmeter1 1.0 generated 09-Mar-16 3:15:14 PM
+    media_SetAdd(iAngularmeter1H, iAngularmeter1L) ;      // point to the Angularmeter1 image
+    media_VideoFrame(0, 0, 45) ;          // where numx is 0 to 100 (for a displayed 0 to 100)
+
+
+    repeat
+    forever
+endfunc
+

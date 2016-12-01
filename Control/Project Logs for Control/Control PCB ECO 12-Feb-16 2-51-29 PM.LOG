@@ -1,6 +1,0 @@
-Added Component: Designator=S1(SW)
-Added Component: Designator=S2(SW)
-Added Pin To Net: NetName=SW2 Pin=S1-1
-Added Pin To Net: NetName=+5V/DIG Pin=S1-2
-Added Pin To Net: NetName=SW1 Pin=S2-1
-Added Pin To Net: NetName=+5V/DIG Pin=S2-2

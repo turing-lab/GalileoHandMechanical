@@ -1,0 +1,10 @@
+Output: Bill of Materials
+Type  : BOM
+From  : Variant [[No Variations]] of Schematic Document [Galileo_Control_Board.SchDoc]
+   Generated File[Bill of Materials-Galileo_Control_Board.csv]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 5:07:21 PM On 23-Nov-16

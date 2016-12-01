@@ -1,0 +1,9 @@
+--cpu Cortex-M4
+".\objects\main.o"
+".\objects\drivers.o"
+"C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Lib\ARM\arm_cortexM4l_math.lib"
+".\objects\startup_mk20d7.o"
+".\objects\system_mk20d7.o"
+--ro-base 0x00000000 --entry 0x00000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\Galileo_Hand_New.map" -o .\Objects\Galileo_Hand_New.axf

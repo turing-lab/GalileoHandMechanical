@@ -1,9 +1,0 @@
-Added Component: Designator=C6(C1206)
-Added Component: Designator=C8(C1206)
-Added Pin To Net: NetName=+5V/ANA Pin=C6-1
-Added Pin To Net: NetName=AGND Pin=C6-2
-Added Pin To Net: NetName=+5V/DIG Pin=C8-1
-Added Pin To Net: NetName=GND Pin=C8-2
-Added Member To Class: ClassName=Control Member=Component C6 10uF, T
-Added Member To Class: ClassName=Control Member=Component C8 10uF, T
-Added Room: Name=Control

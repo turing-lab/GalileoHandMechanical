@@ -1,0 +1,34 @@
+#platform "GOLDELOX"
+
+// Program Skeleton 1.0 generated 09-Mar-16 3:17:22 PM
+
+#inherit "4DGL_16bitColours.fnc"
+
+#inherit "VisualConst.inc"
+
+#inherit "Test4Const.inc"
+
+func main()
+
+    print("Starting\n") ;
+    while(!media_Init())
+        putstr("Drive not mounted...");
+        pause(200);
+        gfx_Cls();
+        pause(200);
+    wend
+
+
+    // Userled1 1.0 generated 09-Mar-16 3:33:33 PM
+    media_SetAdd(iUserled1H, iUserled1L) ;      // point to the Userled1 image
+    media_VideoFrame(18, 40, 1) ;      // where numx is 0 (Off) or 1 (On)
+
+    // Winbutton1 1.0 generated 09-Mar-16 3:33:36 PM
+    media_SetAdd(iWinbutton1H, iWinbutton1L) ;      // point to the Winbutton1 image
+    media_VideoFrame(8, 88, 0) ; // where state is 0 for up and 1 for down
+
+
+    repeat
+    forever
+endfunc
+

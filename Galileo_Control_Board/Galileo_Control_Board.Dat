@@ -1,0 +1,22 @@
+﻿Field=#~Integer~#~50|Field=Comment~String~Comment~100|Field=Description~String~Description~100|Field=Designator~String~Designator~100|Field=Footprint~String~Footprint~100|Field=LibRef~String~LibRef~100|Field=Quantity~Integer~Quantity~100|ReportField=Currency~<none>|ReportField=ProductionQuantity~1|ReportField=ProjectFileName~Galileo_Control_Board.PrjPCB|ReportField=ProjectFullPath~D:\Workspace_Altium\Galileo_Control_Board\Galileo_Control_Board.PrjPCB|ReportField=Title~Bill of Materials For Schematic Document [Galileo_Control_Board.SchDoc]|ReportField=TotalQuantity~51|ReportField=ReportTime~6:12:36 PM|ReportField=ReportDate~11-Jul-16|ReportField=ReportDateTime~11-Jul-16 6:12:36 PM|ReportField=OutputName~Bill of Materials|ReportField=OutputType~BOM_PartType|ReportField=GeneratorName~BOM|ReportField=GeneratorDescription~Bill of Materials|ReportField=VariantName~None|ReportField=Address1~|ReportField=Address2~|ReportField=Address3~|ReportField=Address4~|ReportField=Application_BuildNumber~|ReportField=ApprovedBy~|ReportField=Author~|ReportField=CheckedBy~|ReportField=CompanyName~|ReportField=CurrentDate~11-Jul-16|ReportField=CurrentTime~6:12:26 PM|ReportField=Date~|ReportField=DocumentFullPathAndName~D:\Workspace_Altium\Galileo_Control_Board\Galileo_Control_Board.SchDoc|ReportField=DocumentName~Galileo_Control_Board.SchDoc|ReportField=DocumentNumber~|ReportField=DrawnBy~|ReportField=Engineer~|ReportField=ImagePath~|ReportField=ModifiedDate~11-Jul-16|ReportField=Organization~|ReportField=ProjectName~Galileo_Control_Board.PrjPCB|ReportField=Revision~|ReportField=Rule~|ReportField=SheetNumber~|ReportField=SheetTotal~|ReportField=Time~|ReportField=Title~|ReportField=DataSourceFileName~Galileo_Control_Board.SchDoc|ReportField=DataSourceFullPath~D:\Workspace_Altium\Galileo_Control_Board\Galileo_Control_Board.SchDoc
+1|100nF|CAP CER 0.1UF 25V X7R 0603|C1, C6, C8, C21|C0603|GRM188R71E104KA01D|4
+2|1uF|CAP CER 1UF 25V X5R 0603|C2, C9, C10|C0603|GRM188R61E105KA12D|3
+3|10nF|CAP CER 10000PF 50V X7R 0805|C3|C0805|GRM216R71H103KA01D|1
+4|10uF, T|CAP TANT 10UF 20V 10% 2413|C4, C7, C20|C1206|T491C106K020AT|3
+5|10uF|CAP ALUM 10UF 20% 25V SMD|C5|CSVB|EEE-1EA100WR|1
+6|2.2uF|CAP CER 2.2UF 6.3V X5R 0603|C11, C12, C13|C0603|06036D225KAT2A|3
+7|10nF|CAP CER 10000PF 16V X7R 0603|C14, C16, C17|C0603|C0603C103K4RACTU|3
+8|10uF|CAP CER 10UF 25V X5R 0603|C15, C18, C19|C0603|GRT188R61E106ME13D|3
+9|TERMINAL BLOCK  2POS 3.5MM|CONN TERMINAL BLOCK 2POS 3.5MM|J1, J2|2POS3.5mm|0393570002|2
+10|EMI FILTER BED|FERRITE BEAD 470 OHM 0603|L1, L2|R0603|BLM18PG471SN1D|2
+11|Motor Pads*||M1, M2, M3, M4, M5, M6|Motor_PAD|Motor_PADs|6
+12|Header 4X2A|Header, 4-Pin, Dual row|P1|HDR2X4_CEN|Header 4X2A|1
+13|Header 5|Header, 5-Pin|P2|HDR1X5|Header 5|1
+14|100|RES SMD 100 OHM 1% 1/10W 0603|R1|R0603|ERJ-3EKF1000V|1
+15|47k|RES SMD 47K OHM 1% 1/10W 0603|R2, R3, R4|R0603|ERJ-3EKF4702V|3
+16|0.2|RES SMD 0.2 OHM 5% 1/2W 1206|R5, R6, R7, R8, R9, R10|R1206|ERJ-8BSJR20V|6
+17|PB|SWITCH PUSH SPST-NO 0.1A 32V|S1, S2|SW|D6C90 F1 LFS|2
+18|OPA335AIDR|IC OPAMP CHOPPER 2MHZ RRO 8SOIC|U1|SO-8|OPA335AIDR|1
+19|REF3112AIDBZR|IC VREF SERIES 1.25V SOT23-3|U2|SOT-23|REF3112AIDBZR|1
+20|Teensy 3.2 - NXP Cortex-M4F||U3|DIP28|Teensy|1
+21|DRV8833CPWPR|IC MOTOR DRIVER PAR|U4, U5, U6|SOP16|DRV8833CPWPR|3

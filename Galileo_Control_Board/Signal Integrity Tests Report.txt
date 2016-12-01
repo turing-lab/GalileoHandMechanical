@@ -1,0 +1,52 @@
+
+
+Falling Edge Overshoot
+
+The following nets have values outside defined tolerance levels :
+
+
+Falling Edge Undershoot
+
+The following nets have values outside defined tolerance levels :
+
+
+Rising Edge Overshoot
+
+The following nets have values outside defined tolerance levels :
+
+
+Rising Edge Undershoot
+
+The following nets have values outside defined tolerance levels :
+
+
+The following nets were not able to be analysed :
+
+TX_LCD
+SW2
+SW1
+RX_LCD
+NetR1_2
+REF
++VBAT
+NetC14_1
+NetC16_1
+NetC17_1
+NetR2_1
+NetR3_1
+NetR4_1
+NetC13_1
+NetC12_1
+NetC11_1
+NetC3_2
+IM6
+IM5
+IM4
+IM3
+IM2
+IM1
+E2
+E1
++5V/ANA
++5V/DIG
+AGND

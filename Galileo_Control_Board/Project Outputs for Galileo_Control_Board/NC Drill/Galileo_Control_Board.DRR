@@ -1,0 +1,17 @@
+----------------------------------------------------------------------------------------------------------------------------------
+NCDrill File Report For: Galileo_Control_Board.PcbDoc   23-Nov-16  5:07:16 PM
+----------------------------------------------------------------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : Galileo_Control_Board.TXT
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+----------------------------------------------------------------------------------------------------------------------------------
+T1      12mil (0.3mm)                                             Round             32        PTH        7.27inch (184.72mm)
+T2      35mil (0.899mm)                                           Round             13        PTH        1.73inch (43.87mm)
+T3      39mil (1.001mm)                                           Round             38        PTH        6.07inch (154.28mm)
+T4      43mil (1.1mm)                                             Round             1         PTH        0.00inch (0.00mm)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              84
+
+Total Processing Time (hh:mm:ss) : 00:00:00

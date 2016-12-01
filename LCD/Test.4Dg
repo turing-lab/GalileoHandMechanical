@@ -1,0 +1,30 @@
+#platform "GOLDELOX"
+
+// Program Skeleton 1.0 generated 01-Mar-16 1:43:23 PM
+
+#inherit "4DGL_16bitColours.fnc"
+
+#inherit "VisualConst.inc"
+
+#inherit "TestConst.inc"
+
+func main()
+//  Uncomment the following if uSD images, fonts or strings used.
+/*
+    print("Starting\n") ;
+    while(!media_Init())
+        putstr("Drive not mounted...");
+        pause(200);
+        gfx_Cls();
+        pause(200);
+    wend
+*/
+    gfx_Set(SCREEN_MODE,PORTRAIT_R) ;
+
+    print("ola ke ase?\n");
+    print("Fearless\nCOCOnescapan\n");
+
+    repeat
+    forever
+endfunc
+

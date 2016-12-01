@@ -1,41 +1,0 @@
-Dependencies for Project 'Galileo_Teensy', Target 'Target 1': (DO NOT MODIFY !)
-F (.\main.c)(0x56D481DE)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections-I D:\TuringLab\GalileoHand\Galileo_Hand\RTE-I D:\TuringLab\GalileoHand\Galileo_Hand\RTE\Device\MK20DX256xxx7-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_K20_DFP\1.3.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DMK20DX256xxx7-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
-I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x55DBF058)
-I (C:\Keil_v5\ARM\PACK\Keil\Kinetis_K20_DFP\1.3.0\Device\Include\MK20D7.h)(0x56C373AA)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm4.h)(0x56267BEC)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DBF060)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x56266830)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x56266830)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x56266830)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmSimd.h)(0x56266830)
-I (C:\Keil_v5\ARM\PACK\Keil\Kinetis_K20_DFP\1.3.0\Device\Include\system_MK20D7.h)(0x4F3C2B56)
-I (drivers.h)(0x56CCC842)
-I (EasyVR.h)(0x56CE2E60)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\arm_math.h)(0x56266830)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x55DBF058)
-I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x55DBF05E)
-F (.\drivers.c)(0x56CE1C26)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections-I D:\TuringLab\GalileoHand\Galileo_Hand\RTE-I D:\TuringLab\GalileoHand\Galileo_Hand\RTE\Device\MK20DX256xxx7-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_K20_DFP\1.3.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DMK20DX256xxx7-o .\objects\drivers.o --omf_browse .\objects\drivers.crf --depend .\objects\drivers.d)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DBF060)
-I (C:\Keil_v5\ARM\PACK\Keil\Kinetis_K20_DFP\1.3.0\Device\Include\MK20D7.h)(0x56C373AA)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm4.h)(0x56267BEC)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x56266830)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x56266830)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x56266830)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmSimd.h)(0x56266830)
-I (C:\Keil_v5\ARM\PACK\Keil\Kinetis_K20_DFP\1.3.0\Device\Include\system_MK20D7.h)(0x4F3C2B56)
-F (.\drivers.h)(0x56CCC842)()
-F (.\EasyVR.c)(0x56CE2E66)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections-I D:\TuringLab\GalileoHand\Galileo_Hand\RTE-I D:\TuringLab\GalileoHand\Galileo_Hand\RTE\Device\MK20DX256xxx7-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_K20_DFP\1.3.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DMK20DX256xxx7-o .\objects\easyvr.o --omf_browse .\objects\easyvr.crf --depend .\objects\easyvr.d)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DBF060)
-I (drivers.h)(0x56CCC842)
-F (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Lib\ARM\arm_cortexM4l_math.lib)(0x56290450)()
-F (RTE\Device\MK20DX256xxx7\RTE_Device.h)(0x56C5E18E)()
-F (RTE\Device\MK20DX256xxx7\startup_MK20D7.s)(0x4F3C2B56)(--cpu Cortex-M4 -g --apcs=interwork -I D:\TuringLab\GalileoHand\Galileo_Hand\RTE-I D:\TuringLab\GalileoHand\Galileo_Hand\RTE\Device\MK20DX256xxx7-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_K20_DFP\1.3.0\Device\Include--pd "__UVISION_VERSION SETA 517" --pd "_RTE_ SETA 1" --pd "MK20DX256xxx7 SETA 1"--list .\listings\startup_mk20d7.lst --xref -o .\objects\startup_mk20d7.o --depend .\objects\startup_mk20d7.d)
-F (RTE\Device\MK20DX256xxx7\system_MK20D7.c)(0x56C6492C)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections-I D:\TuringLab\GalileoHand\Galileo_Hand\RTE-I D:\TuringLab\GalileoHand\Galileo_Hand\RTE\Device\MK20DX256xxx7-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_K20_DFP\1.3.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DMK20DX256xxx7-o .\objects\system_mk20d7.o --omf_browse .\objects\system_mk20d7.crf --depend .\objects\system_mk20d7.d)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DBF060)
-I (C:\Keil_v5\ARM\PACK\Keil\Kinetis_K20_DFP\1.3.0\Device\Include\MK20D7.h)(0x56C373AA)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm4.h)(0x56267BEC)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x56266830)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x56266830)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x56266830)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmSimd.h)(0x56266830)
-I (C:\Keil_v5\ARM\PACK\Keil\Kinetis_K20_DFP\1.3.0\Device\Include\system_MK20D7.h)(0x4F3C2B56)

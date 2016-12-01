@@ -1,0 +1,119 @@
+#platform "GOLDELOX"
+
+#inherit "4DGL_16bitColours.fnc"
+
+func main()
+
+    gfx_ScreenMode(PORTRAIT) ; // change manually if orientation change
+    gfx_Cls();
+
+    print("   GALILEO HAND   \n");      // replace with your code
+    print("   version 1.0    \n");
+    print("                  \n");
+    print("Is  a low-cost  3D\n") ;
+    print("Printed prosthesis\n");
+    print("Released as DIYkit\n");
+    print("Focused on  people\n");
+    print("With  below  elbow\n");
+    print("Disarticulation.  \n");
+    print("                  \n");
+    print("Julio E. Fajardo  \n");
+    print("Victor Ferman     \n");
+    print("Ali Lemus         \n");
+    print("Alan Turing Lab   \n");
+    print("FISICC, U. Galileo\n");
+    print("Guatemala.May.2016\n");
+
+    pause(6000);
+
+    var combuf[10];
+    var char := '0';
+    com_Init(combuf,7,0);
+    gfx_Cls();
+    txt_MoveCursor(0, 0);       // move to required text position (font size related)
+
+    print("                  \n");
+    print("   GALILEO HAND   \n");
+    print("                  \n");
+    print(" Manual mode DEMO \n");
+    print("                  \n");
+    print("                  \n");
+    print(" 1.Close  4.Lat.G \n");
+    print("                  \n");
+    print(" 2.Point  5.Peace \n");
+    print("                  \n");
+    print(" 3.Pinch  6.Open  \n");
+    print("                  \n");
+    print("                  \n");
+    print("\"Press the button\n");
+    print("to select actions\"\n");
+
+    //gfx_OutlineColour(YELLOW) ;
+    gfx_Rectangle(5, 45, 60, 60, YELLOW) ;
+    gfx_Rectangle(5, 61, 60, 75, BLACK) ;
+    gfx_Rectangle(5, 76, 60, 90, BLACK) ;
+
+    gfx_Rectangle(67, 45, 123, 60, BLACK) ;
+    gfx_Rectangle(67, 61, 123, 75, BLACK) ;
+    gfx_Rectangle(67, 76, 123, 90, BLACK) ;
+
+    txt_MoveCursor(0, 0);
+    repeat                      // maybe replace
+        if(com_Count())
+            char := serin();
+            //serout(char);
+            //putch(char);
+            switch(char)
+                case '0':
+                    gfx_Rectangle(5, 45, 60, 60, YELLOW) ;
+                    gfx_Rectangle(5, 61, 60, 75, BLACK) ;
+                    gfx_Rectangle(5, 76, 60, 90, BLACK) ;
+                    gfx_Rectangle(67, 45, 123, 60, BLACK) ;
+                    gfx_Rectangle(67, 61, 123, 75, BLACK) ;
+                    gfx_Rectangle(67, 76, 123, 90, BLACK) ;
+                    break;
+                case '1':
+                    gfx_Rectangle(5, 45, 60, 60, BLACK) ;
+                    gfx_Rectangle(5, 61, 60, 75, YELLOW) ;
+                    gfx_Rectangle(5, 76, 60, 90, BLACK) ;
+                    gfx_Rectangle(67, 45, 123, 60, BLACK) ;
+                    gfx_Rectangle(67, 61, 123, 75, BLACK) ;
+                    gfx_Rectangle(67, 76, 123, 90, BLACK) ;
+                    break;
+                case '2':
+                    gfx_Rectangle(5, 45, 60, 60, BLACK) ;
+                    gfx_Rectangle(5, 61, 60, 75, BLACK) ;
+                    gfx_Rectangle(5, 76, 60, 90, YELLOW) ;
+                    gfx_Rectangle(67, 45, 123, 60, BLACK) ;
+                    gfx_Rectangle(67, 61, 123, 75, BLACK) ;
+                    gfx_Rectangle(67, 76, 123, 90, BLACK) ;
+                    break;
+                case '3':
+                    gfx_Rectangle(5, 45, 60, 60, BLACK) ;
+                    gfx_Rectangle(5, 61, 60, 75, BLACK) ;
+                    gfx_Rectangle(5, 76, 60, 90, BLACK) ;
+                    gfx_Rectangle(67, 45, 123, 60, YELLOW) ;
+                    gfx_Rectangle(67, 61, 123, 75, BLACK) ;
+                    gfx_Rectangle(67, 76, 123, 90, BLACK) ;
+                    break;
+                case '4':
+                    gfx_Rectangle(5, 45, 60, 60, BLACK) ;
+                    gfx_Rectangle(5, 61, 60, 75, BLACK) ;
+                    gfx_Rectangle(5, 76, 60, 90, BLACK) ;
+                    gfx_Rectangle(67, 45, 123, 60, BLACK) ;
+                    gfx_Rectangle(67, 61, 123, 75, YELLOW) ;
+                    gfx_Rectangle(67, 76, 123, 90, BLACK) ;
+                    break;
+                case '5':
+                    gfx_Rectangle(5, 45, 60, 60, BLACK) ;
+                    gfx_Rectangle(5, 61, 60, 75, BLACK) ;
+                    gfx_Rectangle(5, 76, 60, 90, BLACK) ;
+                    gfx_Rectangle(67, 45, 123, 60, BLACK) ;
+                    gfx_Rectangle(67, 61, 123, 75, BLACK) ;
+                    gfx_Rectangle(67, 76, 123, 90, YELLOW) ;
+            endswitch
+        endif
+    forever                     // this as well
+
+endfunc
+

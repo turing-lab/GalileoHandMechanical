@@ -1,0 +1,6 @@
+Added Component: Designator=C20(C1206)
+Added Component: Designator=C21(C0603)
+Added Pin To Net: NetName=+VBAT Pin=C20-1
+Added Pin To Net: NetName=GND Pin=C20-2
+Added Pin To Net: NetName=GND Pin=C21-1
+Added Pin To Net: NetName=+VBAT Pin=C21-2

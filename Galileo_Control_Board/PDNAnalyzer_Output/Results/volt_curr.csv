@@ -1,0 +1,6 @@
+Device Type;Power Pin;Ground Pin;Voltage;Drop on Power;Drop on Ground;Current
+;;;;;;
+Power Supply;j2_1;j2_2;10.9985;0.0015;1.5e-008;1.5;
+IO Device;u5_12;u5_13;10.8161;0.1764;0.00746697;-0.5;
+;u4_12;u4_13;10.7925;0.19876;0.00869222;-0.5;
+;u6_12;u6_13;10.867;0.12679;0.00617729;-0.5;

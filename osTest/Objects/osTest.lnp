@@ -1,0 +1,9 @@
+--cpu Cortex-M4.fp
+".\objects\main.o"
+".\objects\osasm.o"
+".\objects\os.o"
+".\objects\startup_stm32f303x8.o"
+".\objects\system_stm32f3xx.o"
+--ro-base 0x08000000 --entry 0x08000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\osTest.map" -o .\Objects\osTest.axf

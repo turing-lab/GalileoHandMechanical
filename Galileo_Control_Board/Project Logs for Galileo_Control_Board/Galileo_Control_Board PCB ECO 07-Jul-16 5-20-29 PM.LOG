@@ -1,0 +1,20 @@
+Added Component: Designator=M1(Motor_PAD)
+Added Component: Designator=M2(Motor_PAD)
+Added Component: Designator=M3(Motor_PAD)
+Added Component: Designator=M4(Motor_PAD)
+Added Component: Designator=M5(Motor_PAD)
+Added Component: Designator=M6(Motor_PAD)
+Added Pin To Net: NetName=M1+ Pin=M1-1
+Added Pin To Net: NetName=M1- Pin=M1-2
+Added Pin To Net: NetName=M2+ Pin=M2-1
+Added Pin To Net: NetName=M2- Pin=M2-2
+Added Pin To Net: NetName=M3+ Pin=M3-1
+Added Pin To Net: NetName=M3- Pin=M3-2
+Added Pin To Net: NetName=M4+ Pin=M4-1
+Added Pin To Net: NetName=M4- Pin=M4-2
+Added Pin To Net: NetName=M5+ Pin=M5-1
+Added Pin To Net: NetName=M5- Pin=M5-2
+Added Pin To Net: NetName=M6+ Pin=M6-1
+Added Pin To Net: NetName=M6- Pin=M6-2
+Added Pin To Net: NetName=IM6 Pin=U3-29
+Added Pin To Net: NetName=IM5 Pin=U3-30
