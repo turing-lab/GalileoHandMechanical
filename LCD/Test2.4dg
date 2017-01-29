@@ -24,7 +24,7 @@ func main()
     print("FISICC, U. Galileo\n");
     print("Guatemala.May.2016\n");
 
-    pause(6000);
+    pause(2000);
 
     var combuf[10];
     var char := '0';
@@ -35,14 +35,14 @@ func main()
     print("                  \n");
     print("   GALILEO HAND   \n");
     print("                  \n");
-    print(" Manual mode DEMO \n");
+    print("   Manual  Mode   \n");
     print("                  \n");
     print("                  \n");
-    print(" 1.Close  4.Lat.G \n");
+    print(" 1.Close  4.Hook  \n");
     print("                  \n");
-    print(" 2.Point  5.Peace \n");
+    print(" 2.Point  5.Latral\n");
     print("                  \n");
-    print(" 3.Pinch  6.Open  \n");
+    print(" 3.Pinch  6.Peace \n");
     print("                  \n");
     print("                  \n");
     print("\"Press the button\n");
@@ -71,6 +71,7 @@ func main()
                     gfx_Rectangle(67, 45, 123, 60, BLACK) ;
                     gfx_Rectangle(67, 61, 123, 75, BLACK) ;
                     gfx_Rectangle(67, 76, 123, 90, BLACK) ;
+
                     break;
                 case '1':
                     gfx_Rectangle(5, 45, 60, 60, BLACK) ;

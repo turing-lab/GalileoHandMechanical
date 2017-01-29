@@ -5,7 +5,19 @@
 #include "drivers.h"
 #include "arm_math.h"                   // ARM::CMSIS:DSP
 
-#define SIZE 	50
+#define 		SIZE 			50
+#define			OPEN			0
+#define			CLOSE			1
+#define			POWER			0
+#define			POINT			1
+#define			PINCH			2
+#define			HOOK			3
+#define			LATERAL		4
+#define			PEACE			5
+
+uint32_t time_ms[5] = {0,0,0,0,0};
+q15_t thresholds[5] = {160,160,160,160,160};
+q15_t rot_threshold = 160;
 
 uint32_t count = 0;
 uint32_t mcount = 600;
@@ -14,8 +26,12 @@ uint8_t state = 0;
 uint8_t ticks = 0;
 uint8_t mstate = 0;
 
-q15_t IM2_mean = 0;
+q15_t IM2_mean[5] = {0,0,0,0,0};
 q15_t IM2_Buffer[SIZE];
+
+void fingers(uint8_t finger_state, q15_t *threshold, uint32_t *time_ms);
+void rotation(uint8_t finger_state, q15_t *threshold);
+void hand_execute(uint8_t hand_state);
 
 int main (void) {
 	Switch_Init();

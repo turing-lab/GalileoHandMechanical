@@ -1693,7 +1693,7 @@ file C:\Program Files (x86)\4D Labs\4D Workshop 4 IDE\include\4DGL_16bitColours.
 001687  000024      print("FISICC, U. Galileo\n");
 001688  000025      print("Guatemala.May.2016\n");
 001689  000026        
-001690  000027      pause(6000);
+001690  000027      pause(2000);
 001691  000028        
 001692  000029      var combuf[10];
 001693  000030      var char := '0';
@@ -1704,14 +1704,14 @@ file C:\Program Files (x86)\4D Labs\4D Workshop 4 IDE\include\4DGL_16bitColours.
 001698  000035      print("                  \n");
 001699  000036      print("   GALILEO HAND   \n");
 001700  000037      print("                  \n");
-001701  000038      print(" Manual mode DEMO \n");
+001701  000038      print("   Manual  Mode   \n");
 001702  000039      print("                  \n");
 001703  000040      print("                  \n");
-001704  000041      print(" 1.Close  4.Lat.G \n");
+001704  000041      print(" 1.Close  4.Hook  \n");
 001705  000042      print("                  \n");
-001706  000043      print(" 2.Point  5.Peace \n");
+001706  000043      print(" 2.Point  5.Latral\n");
 001707  000044      print("                  \n");
-001708  000045      print(" 3.Pinch  6.Open  \n");
+001708  000045      print(" 3.Pinch  6.Peace \n");
 001709  000046      print("                  \n");
 001710  000047      print("                  \n");
 001711  000048      print("\"Press the button\n");
@@ -1734,58 +1734,59 @@ file C:\Program Files (x86)\4D Labs\4D Workshop 4 IDE\include\4DGL_16bitColours.
 001728  000065              //putch(char);
 001729  000066              switch(char)
 001730  000067                  case '0':
-001731  000068                      gfx_Rectangle(5, 45, 60, 60, YELLOW) ;
-001732  000069                      gfx_Rectangle(5, 61, 60, 75, BLACK) ;
-001733  000070                      gfx_Rectangle(5, 76, 60, 90, BLACK) ;
-001734  000071                      gfx_Rectangle(67, 45, 123, 60, BLACK) ;
-001735  000072                      gfx_Rectangle(67, 61, 123, 75, BLACK) ;
-001736  000073                      gfx_Rectangle(67, 76, 123, 90, BLACK) ;
-001737  000074                      break;
-001738  000075                  case '1':
-001739  000076                      gfx_Rectangle(5, 45, 60, 60, BLACK) ;
-001740  000077                      gfx_Rectangle(5, 61, 60, 75, YELLOW) ;
-001741  000078                      gfx_Rectangle(5, 76, 60, 90, BLACK) ;
-001742  000079                      gfx_Rectangle(67, 45, 123, 60, BLACK) ;
-001743  000080                      gfx_Rectangle(67, 61, 123, 75, BLACK) ;
-001744  000081                      gfx_Rectangle(67, 76, 123, 90, BLACK) ;
-001745  000082                      break;
-001746  000083                  case '2':
-001747  000084                      gfx_Rectangle(5, 45, 60, 60, BLACK) ;
-001748  000085                      gfx_Rectangle(5, 61, 60, 75, BLACK) ;
-001749  000086                      gfx_Rectangle(5, 76, 60, 90, YELLOW) ;
-001750  000087                      gfx_Rectangle(67, 45, 123, 60, BLACK) ;
-001751  000088                      gfx_Rectangle(67, 61, 123, 75, BLACK) ;
-001752  000089                      gfx_Rectangle(67, 76, 123, 90, BLACK) ;
-001753  000090                      break;
-001754  000091                  case '3':
-001755  000092                      gfx_Rectangle(5, 45, 60, 60, BLACK) ;
-001756  000093                      gfx_Rectangle(5, 61, 60, 75, BLACK) ;
-001757  000094                      gfx_Rectangle(5, 76, 60, 90, BLACK) ;
-001758  000095                      gfx_Rectangle(67, 45, 123, 60, YELLOW) ;
-001759  000096                      gfx_Rectangle(67, 61, 123, 75, BLACK) ;
-001760  000097                      gfx_Rectangle(67, 76, 123, 90, BLACK) ;
-001761  000098                      break;
-001762  000099                  case '4':
-001763  000100                      gfx_Rectangle(5, 45, 60, 60, BLACK) ;
-001764  000101                      gfx_Rectangle(5, 61, 60, 75, BLACK) ;
-001765  000102                      gfx_Rectangle(5, 76, 60, 90, BLACK) ;
-001766  000103                      gfx_Rectangle(67, 45, 123, 60, BLACK) ;
-001767  000104                      gfx_Rectangle(67, 61, 123, 75, YELLOW) ;
-001768  000105                      gfx_Rectangle(67, 76, 123, 90, BLACK) ;
-001769  000106                      break;
-001770  000107                  case '5':
-001771  000108                      gfx_Rectangle(5, 45, 60, 60, BLACK) ;
-001772  000109                      gfx_Rectangle(5, 61, 60, 75, BLACK) ;
-001773  000110                      gfx_Rectangle(5, 76, 60, 90, BLACK) ;
-001774  000111                      gfx_Rectangle(67, 45, 123, 60, BLACK) ;
-001775  000112                      gfx_Rectangle(67, 61, 123, 75, BLACK) ;
-001776  000113                      gfx_Rectangle(67, 76, 123, 90, YELLOW) ;
-001777  000114              endswitch
-001778  000115          endif
-001779  000116      forever                     // this as well
-001780  000117        
-001781  000118  endfunc
-001782  000119        
+001731  000073                      gfx_Rectangle(67, 76, 123, 90, BLACK) ; */
+001732  000074                      gfx_Rectangle(5, 45, 60, 60, BLACK) ;
+001733  000075                      gfx_Rectangle(5, 61, 60, 75, YELLOW) ;
+001734  000076                      gfx_Rectangle(5, 76, 60, 90, BLACK) ;
+001735  000077                      gfx_Rectangle(67, 45, 123, 60, BLACK) ;
+001736  000078                      gfx_Rectangle(67, 61, 123, 75, BLACK) ;
+001737  000079                      gfx_Rectangle(67, 76, 123, 90, BLACK) ;
+001738  000080                      break;
+001739  000081                  case '1':
+001740  000082                      gfx_Rectangle(5, 45, 60, 60, BLACK) ;
+001741  000083                      gfx_Rectangle(5, 61, 60, 75, YELLOW) ;
+001742  000084                      gfx_Rectangle(5, 76, 60, 90, BLACK) ;
+001743  000085                      gfx_Rectangle(67, 45, 123, 60, BLACK) ;
+001744  000086                      gfx_Rectangle(67, 61, 123, 75, BLACK) ;
+001745  000087                      gfx_Rectangle(67, 76, 123, 90, BLACK) ;
+001746  000088                      break;
+001747  000089                  case '2':
+001748  000090                      gfx_Rectangle(5, 45, 60, 60, BLACK) ;
+001749  000091                      gfx_Rectangle(5, 61, 60, 75, BLACK) ;
+001750  000092                      gfx_Rectangle(5, 76, 60, 90, YELLOW) ;
+001751  000093                      gfx_Rectangle(67, 45, 123, 60, BLACK) ;
+001752  000094                      gfx_Rectangle(67, 61, 123, 75, BLACK) ;
+001753  000095                      gfx_Rectangle(67, 76, 123, 90, BLACK) ;
+001754  000096                      break;
+001755  000097                  case '3':
+001756  000098                      gfx_Rectangle(5, 45, 60, 60, BLACK) ;
+001757  000099                      gfx_Rectangle(5, 61, 60, 75, BLACK) ;
+001758  000100                      gfx_Rectangle(5, 76, 60, 90, BLACK) ;
+001759  000101                      gfx_Rectangle(67, 45, 123, 60, YELLOW) ;
+001760  000102                      gfx_Rectangle(67, 61, 123, 75, BLACK) ;
+001761  000103                      gfx_Rectangle(67, 76, 123, 90, BLACK) ;
+001762  000104                      break;
+001763  000105                  case '4':
+001764  000106                      gfx_Rectangle(5, 45, 60, 60, BLACK) ;
+001765  000107                      gfx_Rectangle(5, 61, 60, 75, BLACK) ;
+001766  000108                      gfx_Rectangle(5, 76, 60, 90, BLACK) ;
+001767  000109                      gfx_Rectangle(67, 45, 123, 60, BLACK) ;
+001768  000110                      gfx_Rectangle(67, 61, 123, 75, YELLOW) ;
+001769  000111                      gfx_Rectangle(67, 76, 123, 90, BLACK) ;
+001770  000112                      break;
+001771  000113                  case '5':
+001772  000114                      gfx_Rectangle(5, 45, 60, 60, BLACK) ;
+001773  000115                      gfx_Rectangle(5, 61, 60, 75, BLACK) ;
+001774  000116                      gfx_Rectangle(5, 76, 60, 90, BLACK) ;
+001775  000117                      gfx_Rectangle(67, 45, 123, 60, BLACK) ;
+001776  000118                      gfx_Rectangle(67, 61, 123, 75, BLACK) ;
+001777  000119                      gfx_Rectangle(67, 76, 123, 90, YELLOW) ;
+001778  000120              endswitch
+001779  000121          endif
+001780  000122      forever                     // this as well
+001781  000123        
+001782  000124  endfunc
+001783  000125        
 
 
 Symbol Table:

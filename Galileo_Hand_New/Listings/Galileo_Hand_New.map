@@ -300,15 +300,15 @@ Image Symbol Table
     i.main                                   0x00000b8c   Section        0  main.o(i.main)
     .constdata                               0x00000c7c   Section       23  drivers.o(.constdata)
     channel2sc1a                             0x00000c7c   Data          23  drivers.o(.constdata)
-    .data                                    0x20000000   Section       14  main.o(.data)
-    .data                                    0x20000010   Section        4  system_mk20d7.o(.data)
-    .bss                                     0x20000014   Section      100  main.o(.bss)
-    .bss                                     0x20000078   Section       96  libspace.o(.bss)
-    HEAP                                     0x200000d8   Section        0  startup_mk20d7.o(HEAP)
-    STACK                                    0x200000d8   Section     1024  startup_mk20d7.o(STACK)
-    Heap_Mem                                 0x200000d8   Data           0  startup_mk20d7.o(HEAP)
-    Stack_Mem                                0x200000d8   Data        1024  startup_mk20d7.o(STACK)
-    __initial_sp                             0x200004d8   Data           0  startup_mk20d7.o(STACK)
+    .data                                    0x20000000   Section       24  main.o(.data)
+    .data                                    0x20000018   Section        4  system_mk20d7.o(.data)
+    .bss                                     0x2000001c   Section      130  main.o(.bss)
+    .bss                                     0x200000a0   Section       96  libspace.o(.bss)
+    HEAP                                     0x20000100   Section        0  startup_mk20d7.o(HEAP)
+    STACK                                    0x20000100   Section     1024  startup_mk20d7.o(STACK)
+    Heap_Mem                                 0x20000100   Data           0  startup_mk20d7.o(HEAP)
+    Stack_Mem                                0x20000100   Data        1024  startup_mk20d7.o(STACK)
+    __initial_sp                             0x20000500   Data           0  startup_mk20d7.o(STACK)
 
     Global Symbols
 
@@ -527,17 +527,20 @@ Image Symbol Table
     main                                     0x00000b8d   Thumb Code   212  main.o(i.main)
     Region$$Table$$Base                      0x00000c94   Number         0  anon$$obj.o(Region$$Table)
     Region$$Table$$Limit                     0x00000cb4   Number         0  anon$$obj.o(Region$$Table)
-    count                                    0x20000000   Data           4  main.o(.data)
-    mcount                                   0x20000004   Data           4  main.o(.data)
-    action                                   0x20000008   Data           1  main.o(.data)
-    state                                    0x20000009   Data           1  main.o(.data)
-    ticks                                    0x2000000a   Data           1  main.o(.data)
-    mstate                                   0x2000000b   Data           1  main.o(.data)
-    IM2_mean                                 0x2000000c   Data           2  main.o(.data)
-    SystemCoreClock                          0x20000010   Data           4  system_mk20d7.o(.data)
-    IM2_Buffer                               0x20000014   Data         100  main.o(.bss)
-    __libspace_start                         0x20000078   Data          96  libspace.o(.bss)
-    __temporary_stack_top$libspace           0x200000d8   Data           0  libspace.o(.bss)
+    thresholds                               0x20000000   Data          10  main.o(.data)
+    rot_threshold                            0x2000000a   Data           2  main.o(.data)
+    count                                    0x2000000c   Data           4  main.o(.data)
+    mcount                                   0x20000010   Data           4  main.o(.data)
+    action                                   0x20000014   Data           1  main.o(.data)
+    state                                    0x20000015   Data           1  main.o(.data)
+    ticks                                    0x20000016   Data           1  main.o(.data)
+    mstate                                   0x20000017   Data           1  main.o(.data)
+    SystemCoreClock                          0x20000018   Data           4  system_mk20d7.o(.data)
+    time_ms                                  0x2000001c   Data          20  main.o(.bss)
+    IM2_mean                                 0x20000030   Data          10  main.o(.bss)
+    IM2_Buffer                               0x2000003a   Data         100  main.o(.bss)
+    __libspace_start                         0x200000a0   Data          96  libspace.o(.bss)
+    __temporary_stack_top$libspace           0x20000100   Data           0  libspace.o(.bss)
 
 
 
@@ -547,7 +550,7 @@ Memory Map of the image
 
   Image Entry point : 0x000004ad
 
-  Load Region LR_1 (Base: 0x00000000, Size: 0x00000cc8, Max: 0xffffffff, ABSOLUTE)
+  Load Region LR_1 (Base: 0x00000000, Size: 0x00000cd0, Max: 0xffffffff, ABSOLUTE)
 
     Execution Region ER_RO (Base: 0x00000000, Size: 0x00000cb4, Max: 0xffffffff, ABSOLUTE)
 
@@ -634,23 +637,23 @@ Memory Map of the image
     0x00000c94   0x00000020   Data   RO          420    Region$$Table       anon$$obj.o
 
 
-    Execution Region ER_RW (Base: 0x20000000, Size: 0x00000014, Max: 0xffffffff, ABSOLUTE)
+    Execution Region ER_RW (Base: 0x20000000, Size: 0x0000001c, Max: 0xffffffff, ABSOLUTE)
 
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000000   0x0000000e   Data   RW           10    .data               main.o
-    0x2000000e   0x00000002   PAD
-    0x20000010   0x00000004   Data   RW          226    .data               system_mk20d7.o
+    0x20000000   0x00000018   Data   RW           10    .data               main.o
+    0x20000018   0x00000004   Data   RW          226    .data               system_mk20d7.o
 
 
-    Execution Region ER_ZI (Base: 0x20000014, Size: 0x000004c4, Max: 0xffffffff, ABSOLUTE)
+    Execution Region ER_ZI (Base: 0x2000001c, Size: 0x000004e4, Max: 0xffffffff, ABSOLUTE)
 
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000014   0x00000064   Zero   RW            9    .bss                main.o
-    0x20000078   0x00000060   Zero   RW          294    .bss                c_w.l(libspace.o)
-    0x200000d8   0x00000000   Zero   RW          212    HEAP                startup_mk20d7.o
-    0x200000d8   0x00000400   Zero   RW          211    STACK               startup_mk20d7.o
+    0x2000001c   0x00000082   Zero   RW            9    .bss                main.o
+    0x2000009e   0x00000002   PAD
+    0x200000a0   0x00000060   Zero   RW          294    .bss                c_w.l(libspace.o)
+    0x20000100   0x00000000   Zero   RW          212    HEAP                startup_mk20d7.o
+    0x20000100   0x00000400   Zero   RW          211    STACK               startup_mk20d7.o
 
 
 ==============================================================================
@@ -661,14 +664,14 @@ Image component sizes
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
        706        100         23          0          0      30699   drivers.o
-      1080         82          0         14        100     234919   main.o
+      1080         82          0         24        130     235152   main.o
         76         38       1024          0       1024       1016   startup_mk20d7.o
         28          6          0          4          0        683   system_mk20d7.o
 
     ----------------------------------------------------------------------
-      1892        226       1080         20       1124     267317   Object Totals
+      1892        226       1080         28       1156     267550   Object Totals
          0          0         32          0          0          0   (incl. Generated)
-         2          0          1          2          0          0   (incl. Padding)
+         2          0          1          0          2          0   (incl. Padding)
 
     ----------------------------------------------------------------------
 
@@ -715,15 +718,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      2172        242       1080         20       1220     267013   Grand Totals
-      2172        242       1080         20       1220     267013   ELF Image Totals
-      2172        242       1080         20          0          0   ROM Totals
+      2172        242       1080         28       1252     267246   Grand Totals
+      2172        242       1080         28       1252     267246   ELF Image Totals
+      2172        242       1080         28          0          0   ROM Totals
 
 ==============================================================================
 
     Total RO  Size (Code + RO Data)                 3252 (   3.18kB)
-    Total RW  Size (RW Data + ZI Data)              1240 (   1.21kB)
-    Total ROM Size (Code + RO Data + RW Data)       3272 (   3.20kB)
+    Total RW  Size (RW Data + ZI Data)              1280 (   1.25kB)
+    Total ROM Size (Code + RO Data + RW Data)       3280 (   3.20kB)
 
 ==============================================================================
 
